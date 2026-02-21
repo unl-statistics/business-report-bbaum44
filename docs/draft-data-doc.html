@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -213,25 +233,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-source-1-bls-survey-of-occupational-injuries-and-illnesses-soii" class="level2" data-number="A.2">
 <h2 data-number="A.2" class="anchored" data-anchor-id="data-source-1-bls-survey-of-occupational-injuries-and-illnesses-soii"><span class="header-section-number">A.2</span> Data Source 1: BLS Survey of Occupational Injuries and Illnesses (SOII)</h2>
-<p>URL: https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm</p>
+<p><span class="citation" data-cites="bls_soii_tables">(<a href="references.html#ref-bls_soii_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.b</a>)</span></p>
 <p>Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agency partners.</p>
 <p>Why it was collected: Required by the OSH Act of 1970 to track nonfatal workplace injuries and illnesses nationwide.</p>
-<p>What it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work.</p>
+<p>What it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work. <span class="citation" data-cites="bls_soii_2024">(<a href="references.html#ref-bls_soii_2024" role="doc-biblioref">Bureau of Labor Statistics 2026b</a>)</span></p>
 <p>When: Published annually. Most recent release covers 2023–2024 (published January 22, 2026).</p>
 <p>Where: U.S. private industry and state/local government establishments. Excludes federal workers and the self-employed.</p>
 <p>How: A stratified random sample of 200,000 employers report injuries from their OSHA 300 Log. BLS calculates incidence rates per 100 full-time equivalent (FTE) workers.</p>
 <p>Structure: Published as XLSX and HTML tables. The dta shows injury rates by NAICS industry code, SOC occupation code, and event/exposure type. Suppressed cells are shown as a dash (—).</p>
 <p>Quality control: BLS calculates relative standard errors for all estimates and flags unreliable cells. (Known limitation: employer self-reporting may undercount injuries).</p>
 <p>License: Public domain (U.S. federal government). Free to use and download.</p>
-<p>###Relevance to report: Tables R4/R8 (industry × event type) and R9/R100 (occupation × event type) allow direct comparison of fall injury rates between office-sector and manufacturing industries. Median DAFW measures injury severity.</p>
+<p>Relevance to report: Tables R4/R8 (industry × event type) and R9/R100 (occupation × event type) allow direct comparison of fall injury rates between office-sector and manufacturing industries. Median DAFW measures injury severity.</p>
 <hr>
 </section>
 <section id="data-source-2-bls-census-of-fatal-occupational-injuries-cfoi" class="level2" data-number="A.3">
 <h2 data-number="A.3" class="anchored" data-anchor-id="data-source-2-bls-census-of-fatal-occupational-injuries-cfoi"><span class="header-section-number">A.3</span> Data Source 2: BLS Census of Fatal Occupational Injuries (CFOI)</h2>
-<p>URL: https://www.bls.gov/iif/fatal-injuries-tables.htm</p>
+<p><span class="citation" data-cites="bls_cfoi_tables">(<a href="references.html#ref-bls_cfoi_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.a</a>)</span></p>
 <p>Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agencies and federal partners.</p>
 <p>Why it was collected: To provide a complete count of all fatal work injuries in the U.S. each year, covering the most severe end of the injury spectrum.</p>
-<p>What it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers.</p>
+<p>What it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers. <span class="citation" data-cites="bls_cfoi_2024">(<a href="references.html#ref-bls_cfoi_2024" role="doc-biblioref">Bureau of Labor Statistics 2026a</a>)</span></p>
 <p>When: Published annually. Most recent release covers 2024 (published February 19, 2026).</p>
 <p>Where: All 50 U.S. states and D.C. Covers all workers including self-employed.</p>
 <p>How: A census, Every fatal work injury is identified and verified using at least two independent source documents from the following: death certificates, OSHA reports, workers’ compensation records, news reports, etc..</p>
@@ -286,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>NAICS Code</td>
 <td>Industry classification</td>
-<td>Numeric code</td>
+<td>Number</td>
 <td>—</td>
 </tr>
 <tr class="even">
@@ -301,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="conclusion" class="level2" data-number="A.5">
 <h2 data-number="A.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">A.5</span> Conclusion</h2>
-<p>The SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both datasets include fall-specific breakdowns by industry and occupation which together directly address the safety officer’s concern about office worker fall risk compared to manufacturing workers.</p>
+<p>The SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both data sets include fall-specific breakdowns by industry and occupation which together directly address the safety officer’s concern about office worker fall risk compared to manufacturing workers.(Thought this data was intersiting to go through, and the overall concern was a bit comical)</p>
 <hr>
 </section>
 <section id="references" class="level2" data-number="A.6">
@@ -312,6 +332,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Bureau of Labor Statistics. (n.d.). <em>CFOI fatal injuries tables.</em> https://www.bls.gov/iif/fatal-injuries-tables.htm</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bls_cfoi_2024" class="csl-entry" role="listitem">
+Bureau of Labor Statistics. 2026a. <span>“Census of Fatal Occupational Injuries Summary, 2024.”</span> https://www.bls.gov/news.release/cfoi.nr0.htm.
+</div>
+<div id="ref-bls_soii_2024" class="csl-entry" role="listitem">
+———. 2026b. <span>“Employer-Reported Workplace Injuries and Illnesses, 2023–2024.”</span> https://www.bls.gov/news.release/osh.nr0.htm.
+</div>
+<div id="ref-bls_cfoi_tables" class="csl-entry" role="listitem">
+———. n.d.a. <span>“Census of Fatal Occupational Injuries (<span>CFOI</span>) — Current and Revised Data.”</span> https://www.bls.gov/iif/fatal-injuries-tables.htm. Accessed February 21, 2026.
+</div>
+<div id="ref-bls_soii_tables" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Survey of Occupational Injuries and Illnesses Data.”</span> https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm. Accessed February 21, 2026.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

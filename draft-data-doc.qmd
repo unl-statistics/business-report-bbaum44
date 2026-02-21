@@ -1,6 +1,7 @@
 ---
 title: "Data Documentation: NSFW"
 format: html
+bibliography: references1.bib
 ---
 
 ## Report Question
@@ -11,13 +12,13 @@ Are office workers at greater risk of injury (particularly falls) than non-offic
 
 ## Data Source 1: BLS Survey of Occupational Injuries and Illnesses (SOII)
 
-URL: https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm
+[@bls_soii_tables]
 
 Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agency partners.
 
 Why it was collected: Required by the OSH Act of 1970 to track nonfatal workplace injuries and illnesses nationwide.
 
-What it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work.
+What it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work. [@bls_soii_2024]
 
 When: Published annually. Most recent release covers 2023–2024 (published January 22, 2026).
 
@@ -38,13 +39,13 @@ Tables R4/R8 (industry × event type) and R9/R100 (occupation × event type) all
 
 ## Data Source 2: BLS Census of Fatal Occupational Injuries (CFOI)
 
-URL: https://www.bls.gov/iif/fatal-injuries-tables.htm
+[@bls_cfoi_tables]
 
 Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agencies and federal partners.
 
 Why it was collected: To provide a complete count of all fatal work injuries in the U.S. each year, covering the most severe end of the injury spectrum.
 
-What it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers.
+What it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers. [@bls_cfoi_2024]
 
 When: Published annually. Most recent release covers 2024 (published February 19, 2026).
 
@@ -70,7 +71,7 @@ Relevance to report: Table 2 breaks down fatal injuries by industry sector and e
 | DAFW Rate | Days away from work rate | Per 10,000 FTE workers | — (suppressed) |
 | Median DAFW | Median days away from work (severity) | Days | — (suppressed) |
 | Fatal Rate | Fatal injury rate | Per 100,000 FTE workers | — (suppressed) |
-| NAICS Code | Industry classification | Numeric code | — |
+| NAICS Code | Industry classification | Number | — |
 | Event/Exposure | Type of incident (e.g., falls, slips) | Categorical | — |
 
 ---
