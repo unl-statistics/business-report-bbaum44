@@ -1,3 +1,92 @@
 ---
-title: "Draft: Data Documentation"
+title: "Data Documentation: NSFW"
+format: html
 ---
+
+## Report Question
+
+Are office workers at greater risk of injury (particularly falls) than non-office/manufacturing workers, and how does injury severity compare?
+
+---
+
+## Data Source 1: BLS Survey of Occupational Injuries and Illnesses (SOII)
+
+URL: https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm
+
+Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agency partners.
+
+Why it was collected: Required by the OSH Act of 1970 to track nonfatal workplace injuries and illnesses nationwide.
+
+What it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work.
+
+When: Published annually. Most recent release covers 2023–2024 (published January 22, 2026).
+
+Where: U.S. private industry and state/local government establishments. Excludes federal workers and the self-employed.
+
+How: A stratified random sample of 200,000 employers report injuries from their OSHA 300 Log. BLS calculates incidence rates per 100 full-time equivalent (FTE) workers.
+
+Structure: Published as XLSX and HTML tables. The dta shows injury rates by NAICS industry code, SOC occupation code, and event/exposure type. Suppressed cells are shown as a dash (—).
+
+Quality control: BLS calculates relative standard errors for all estimates and flags unreliable cells. (Known limitation: employer self-reporting may undercount injuries).
+
+License: Public domain (U.S. federal government). Free to use and download.
+
+Relevance to report:
+Tables R4/R8 (industry × event type) and R9/R100 (occupation × event type) allow direct comparison of fall injury rates between office-sector and manufacturing industries. Median DAFW measures injury severity.
+
+---
+
+## Data Source 2: BLS Census of Fatal Occupational Injuries (CFOI)
+
+URL: https://www.bls.gov/iif/fatal-injuries-tables.htm
+
+Who collected it: U.S. Bureau of Labor Statistics (BLS), with state agencies and federal partners.
+
+Why it was collected: To provide a complete count of all fatal work injuries in the U.S. each year, covering the most severe end of the injury spectrum.
+
+What it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers.
+
+When: Published annually. Most recent release covers 2024 (published February 19, 2026).
+
+Where: All 50 U.S. states and D.C. Covers all workers including self-employed.
+
+How: A census, Every fatal work injury is identified and verified using at least two independent source documents from the following: death certificates, OSHA reports, workers' compensation records, news reports, etc..
+
+Structure: Published as XLSX and HTML tables. The data shows fatal counts and rates by NAICS industry, SOC occupation, and event/exposure type. Suppressed values shown as a dash (—).
+
+Quality control: Each case is independently verified through multiple source documents. 
+
+License: Public domain (U.S. federal government). Free to use and download.
+
+Relevance to report: Table 2 breaks down fatal injuries by industry sector and event type (falls, slips, trips), enabling comparison of both severity and risk between office and manufacturing sectors.
+
+---
+
+## Codebook 
+
+| Variable | Description | Units | Missing Values |
+|---|---|---|---|
+| TRC Rate | Total recordable injury/illness rate | Per 100 FTE workers | — (suppressed) |
+| DAFW Rate | Days away from work rate | Per 10,000 FTE workers | — (suppressed) |
+| Median DAFW | Median days away from work (severity) | Days | — (suppressed) |
+| Fatal Rate | Fatal injury rate | Per 100,000 FTE workers | — (suppressed) |
+| NAICS Code | Industry classification | Numeric code | — |
+| Event/Exposure | Type of incident (e.g., falls, slips) | Categorical | — |
+
+---
+
+## Conclusion
+
+The SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both data sets include fall-specific breakdowns by industry and occupation which together directly address the safety officer's concern about office worker fall risk compared to manufacturing workers.(Thought this data was intersiting to go through, and the overall concern was a bit comical)
+
+---
+
+## References
+
+Bureau of Labor Statistics. (2026). *Employer-reported workplace injuries and illnesses — 2023–2024.* U.S. Department of Labor. https://www.bls.gov/news.release/osh.nr0.htm
+
+Bureau of Labor Statistics. (2024). *National census of fatal occupational injuries in 2023.* U.S. Department of Labor. https://www.bls.gov/news.release/cfoi.nr0.htm
+
+Bureau of Labor Statistics. (n.d.). *SOII nonfatal injuries and illnesses tables.* https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm
+
+Bureau of Labor Statistics. (n.d.). *CFOI fatal injuries tables.* https://www.bls.gov/iif/fatal-injuries-tables.htm

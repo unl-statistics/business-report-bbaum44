@@ -1,0 +1,98 @@
+[
+  {
+    "objectID": "draft-data-doc.html",
+    "href": "draft-data-doc.html",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "",
+    "text": "A.1 Report Question\nAre office workers at greater risk of injury (particularly falls) than non-office/manufacturing workers, and how does injury severity compare?",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#data-source-1-bls-survey-of-occupational-injuries-and-illnesses-soii",
+    "href": "draft-data-doc.html#data-source-1-bls-survey-of-occupational-injuries-and-illnesses-soii",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "A.2 Data Source 1: BLS Survey of Occupational Injuries and Illnesses (SOII)",
+    "text": "A.2 Data Source 1: BLS Survey of Occupational Injuries and Illnesses (SOII)\nURL: https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm\nWho collected it: U.S. Bureau of Labor Statistics (BLS), with state agency partners.\nWhy it was collected: Required by the OSH Act of 1970 to track nonfatal workplace injuries and illnesses nationwide.\nWhat it contains: Annual nonfatal injury and illness counts and rates by industry, occupation, and event type (e.g., falls, slips, trips). Key measures include Total Recordable Case (TRC) rates, Days Away From Work (DAFW) rates, and median days away from work.\nWhen: Published annually. Most recent release covers 2023–2024 (published January 22, 2026).\nWhere: U.S. private industry and state/local government establishments. Excludes federal workers and the self-employed.\nHow: A stratified random sample of 200,000 employers report injuries from their OSHA 300 Log. BLS calculates incidence rates per 100 full-time equivalent (FTE) workers.\nStructure: Published as XLSX and HTML tables. The dta shows injury rates by NAICS industry code, SOC occupation code, and event/exposure type. Suppressed cells are shown as a dash (—).\nQuality control: BLS calculates relative standard errors for all estimates and flags unreliable cells. (Known limitation: employer self-reporting may undercount injuries).\nLicense: Public domain (U.S. federal government). Free to use and download.\n###Relevance to report: Tables R4/R8 (industry × event type) and R9/R100 (occupation × event type) allow direct comparison of fall injury rates between office-sector and manufacturing industries. Median DAFW measures injury severity.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#data-source-2-bls-census-of-fatal-occupational-injuries-cfoi",
+    "href": "draft-data-doc.html#data-source-2-bls-census-of-fatal-occupational-injuries-cfoi",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "A.3 Data Source 2: BLS Census of Fatal Occupational Injuries (CFOI)",
+    "text": "A.3 Data Source 2: BLS Census of Fatal Occupational Injuries (CFOI)\nURL: https://www.bls.gov/iif/fatal-injuries-tables.htm\nWho collected it: U.S. Bureau of Labor Statistics (BLS), with state agencies and federal partners.\nWhy it was collected: To provide a complete count of all fatal work injuries in the U.S. each year, covering the most severe end of the injury spectrum.\nWhat it contains: Fatal injury counts and rates by industry, occupation, and event type (including falls). Fatal rates are expressed per 100,000 FTE workers.\nWhen: Published annually. Most recent release covers 2024 (published February 19, 2026).\nWhere: All 50 U.S. states and D.C. Covers all workers including self-employed.\nHow: A census, Every fatal work injury is identified and verified using at least two independent source documents from the following: death certificates, OSHA reports, workers’ compensation records, news reports, etc..\nStructure: Published as XLSX and HTML tables. The data shows fatal counts and rates by NAICS industry, SOC occupation, and event/exposure type. Suppressed values shown as a dash (—).\nQuality control: Each case is independently verified through multiple source documents.\nLicense: Public domain (U.S. federal government). Free to use and download.\nRelevance to report: Table 2 breaks down fatal injuries by industry sector and event type (falls, slips, trips), enabling comparison of both severity and risk between office and manufacturing sectors.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#codebook",
+    "href": "draft-data-doc.html#codebook",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "A.4 Codebook",
+    "text": "A.4 Codebook\n\n\n\n\n\n\n\n\n\nVariable\nDescription\nUnits\nMissing Values\n\n\n\n\nTRC Rate\nTotal recordable injury/illness rate\nPer 100 FTE workers\n— (suppressed)\n\n\nDAFW Rate\nDays away from work rate\nPer 10,000 FTE workers\n— (suppressed)\n\n\nMedian DAFW\nMedian days away from work (severity)\nDays\n— (suppressed)\n\n\nFatal Rate\nFatal injury rate\nPer 100,000 FTE workers\n— (suppressed)\n\n\nNAICS Code\nIndustry classification\nNumeric code\n—\n\n\nEvent/Exposure\nType of incident (e.g., falls, slips)\nCategorical\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#conclusion",
+    "href": "draft-data-doc.html#conclusion",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "A.5 Conclusion",
+    "text": "A.5 Conclusion\nThe SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both datasets include fall-specific breakdowns by industry and occupation which together directly address the safety officer’s concern about office worker fall risk compared to manufacturing workers.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "draft-data-doc.html#references",
+    "href": "draft-data-doc.html#references",
+    "title": "Appendix A — Data Documentation: NSFW",
+    "section": "A.6 References",
+    "text": "A.6 References\nBureau of Labor Statistics. (2026). Employer-reported workplace injuries and illnesses — 2023–2024. U.S. Department of Labor. https://www.bls.gov/news.release/osh.nr0.htm\nBureau of Labor Statistics. (2024). National census of fatal occupational injuries in 2023. U.S. Department of Labor. https://www.bls.gov/news.release/cfoi.nr0.htm\nBureau of Labor Statistics. (n.d.). SOII nonfatal injuries and illnesses tables. https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm\nBureau of Labor Statistics. (n.d.). CFOI fatal injuries tables. https://www.bls.gov/iif/fatal-injuries-tables.htm",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data Documentation: NSFW</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
