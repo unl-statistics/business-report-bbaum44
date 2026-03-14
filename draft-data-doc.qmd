@@ -78,16 +78,7 @@ Relevance to report: Table 2 breaks down fatal injuries by industry sector and e
 
 ## Conclusion
 
-The SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both data sets include fall-specific breakdowns by industry and occupation which together directly address the safety officer's concern about office worker fall risk compared to manufacturing workers.(Thought this data was intersiting to go through, and the overall concern was a bit comical)
+The SOII covers the probability and severity of nonfatal injuries by industry and event type, while the CFOI covers fatal injuries. Together they span the full injury severity spectrum. Both data sets include fall-specific breakdowns by industry and occupation which together directly address the safety officer's concern about office worker fall risk compared to manufacturing workers.(Thought this data was intersting to go through, and the overall concern was a bit comical)
 
 ---
 
-## References
-
-Bureau of Labor Statistics. (2026). *Employer-reported workplace injuries and illnesses — 2023–2024.* U.S. Department of Labor. https://www.bls.gov/news.release/osh.nr0.htm
-
-Bureau of Labor Statistics. (2024). *National census of fatal occupational injuries in 2023.* U.S. Department of Labor. https://www.bls.gov/news.release/cfoi.nr0.htm
-
-Bureau of Labor Statistics. (n.d.). *SOII nonfatal injuries and illnesses tables.* https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm
-
-Bureau of Labor Statistics. (n.d.). *CFOI fatal injuries tables.* https://www.bls.gov/iif/fatal-injuries-tables.htm
