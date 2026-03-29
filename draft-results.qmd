@@ -6,17 +6,24 @@ title: "Draft: Results"
 library(readxl)
 library(tidyverse)
 
+# loading in data
 r8 <- read_excel("case-and-demographic-characteristics-table-r8-2023-2024.xlsx", col_names = FALSE)
 r100 <- read_excel("case-and-demographic-characteristics-table-r100-2023-2024.xlsx", col_names = FALSE)
 table2 <- read_excel("fatal.xlsx", col_names = FALSE)
 
-# Search for rows containing "office" or "manufacturing" or "falls"
-newr8<-r8 %>% filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
-newr100<-r100 %>% filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
-new_table2<-table2 %>% filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
+#filter for relevant rows
+newr8 <- r8 %>%
+  filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
 
+newr100 <- r100 %>%
+  filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
 
+new_table2 <- table2 %>%
+  filter(if_any(everything(), ~ grepl("ffice|anufacturing|alls", ., ignore.case = TRUE)))
 ```
+
+
+
 
 ## Results
 
