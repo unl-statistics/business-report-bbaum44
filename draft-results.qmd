@@ -27,15 +27,24 @@ new_table2 <- table2 %>%
 
 ## Results
 
-Data Characteristics
+### Data Characteristics
 
 Data was taken from two BLS sources covering 2023-2024 (SOII) and 2024 (CFOI). The SOII measured nonfatal injury rates per 10,000 full-time workers by industry and event type, while the CFOI provided a complete count of all fatal work injuries.
 
-Primary Analysis
+
+::: callout-note
+
+You need to show some of the data -- how are things distributed? Are there any anomalies or missing data? A bit of exploratory data vis is useful here.
+
+Make sure you define each acronym before you use it.
+
+:::
+
+### Primary Analysis <!-- Title this something more descriptive, like what the goal of the primary analysis is -->
 
 Nonfatal injury rates from the SOII showed that manufacturing workers had a rate of [X] per 10,000 FTE workers, compared to [X] for office/finance workers. Fall-specific rates were [X] for manufacturing and [X] for office workers, suggesting office workers [are/are not] at greater fall risk than manufacturing workers.
 
-Secondary Analysis
+### Secondary Analysis <!-- Title this something more descriptive, like what the goal of the secondary analysis is -->
 
 Injury severity was measured using median days away from work. Manufacturing workers had a median of [X] days compared to [X] days for office workers, indicating injuries in [sector] tend to be more severe. Fatal injury data from the CFOI showed [X] fatal injuries in manufacturing compared to [X] in finance/office sectors in 2024, with falls accounting for [X] and [X] respectively.
 
@@ -43,3 +52,10 @@ Injury severity was measured using median days away from work. Manufacturing wor
 Overall, the data suggest that manufacturing workers face [higher/lower] injury rates than office workers, however office workers may face [greater/lesser] fall-specific risk than expected. Injury severity as measured by days away from work was greater in [sector], and fatal injuries were more common in [sector].
 
 still need to work with the data before running tests
+
+
+::: caution-note
+
+Ok, overall it seems like you're a bit behind on the results. I'd like to see some graphs of the data to support your conclusions -- thoughtful, well-constructed graphs. Please don't wait till the last minute on this -- it almost guarantees that I'll end up being harsher than I want to be w.r.t. grading, because I haven't given you enough intermediate feedback because there wasn't enough here to give feedback on.
+
+:::

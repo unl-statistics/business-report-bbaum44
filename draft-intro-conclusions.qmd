@@ -2,7 +2,7 @@
 title: "Draft: Intro/Conclusions"
 ---
 
-#Introduction
+# Introduction
 
 Every year, thousand of injuries occur while employees are on the jobsite. Workplace safety is important in all industries, but the severity of risk may vary. Many people assume manufacturing jobs are more dangerous because of heavy machinery and physical labor. However, office jobs also have risks that are often overlooked, especially falls.
 
@@ -11,7 +11,11 @@ This report explores the question: Are office workers at greater risk of injury 
 To answer this, the report uses data from the Bureau of Labor Statistics (BLS), including the Survey of Occupational Injuries and Illnesses (SOII) for nonfatal injuries and the Census of Fatal Occupational Injuries (CFOI) for fatal cases. Together, these sources provide a clear comparison of injury risk and severity between office and manufacturing workers.
 
 
-#Still need to work with the acual data more, but used blanks that i will change once i have the results
+<!-- Still need to work with the acual data more, but used blanks that i will change once i have the results --> <!-- This is an HTML comment - don't use # for comments in markdown - it turns into a header -->
+
+
+
+# Conclusion?
 
 This report looked at whether office workers face a higher risk of fall-related injuries than manufacturing workers, using both nonfatal and fatal injury data from the BLS.
 
@@ -20,3 +24,10 @@ Manufacturing workers have higher overall injury rates, which makes sense given 
 There are a few limitations to keep in mind. The data relies on employer reporting, which may miss some injuries, and the broad industry categories can hide differences within each sector.
 
 Overall, the findings show that workplace safety should be specific to each environment. Even in offices, where overall injury rates are lower, fall prevention should still be taken seriously. Simple steps like keeping walkways clear, using slip-resistant flooring, and improving workspace design can make a difference.
+
+
+::: callout-note
+
+It's hard to give feedback on something that's skeletal like this - in general, you should reference specifics that you've seen in the data and highlight the decisions that should be made based on that information. Use a callout box to show the key takeaways for a business executive.
+
+:::
