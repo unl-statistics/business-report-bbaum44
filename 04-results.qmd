@@ -1,0 +1,83 @@
+---
+title: "04-results"
+format: html
+---
+
+## Results
+
+### Nonfatal Injury Rates
+
+As shown in @tbl-nonfatal, manufacturing workers experienced a total nonfatal injury rate of `r mfg_total` per 10,000 FTE workers — roughly `r round(mfg_total / fin_total, 0)` times higher than the rate in finance and insurance (`r fin_total`) and `r round(mfg_total / pro_total, 1)` times higher than professional services (`r pro_total`).
+
+```{r}
+#| label: tbl-nonfatal
+#| tbl-cap: "Nonfatal injury rates per 10,000 FTE workers by sector (SOII, 2023–2024)"
+#| echo: false
+
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Total Rate` = c(mfg_total, fin_total, pro_total),
+  `Fall Rate` = c(mfg_falls, fin_falls, pro_falls),
+  `Falls as % of Total` = c(
+    paste0(mfg_fall_share, "%"),
+    paste0(fin_fall_share, "%"),
+    paste0(pro_fall_share, "%")
+  )
+) |>
+  kable()
+```
+
+### Fall-Specific Risk
+
+While manufacturing workers have more falls in absolute terms, falls represent a much larger *proportion* of injuries in office sectors. As seen in @tbl-nonfatal, falls account for `r fin_fall_share`% of all nonfatal injuries in finance and insurance, and `r pro_fall_share`% in professional services — compared to just `r mfg_fall_share`% in manufacturing.
+
+This means that in office environments, falls are the dominant injury type. In manufacturing, falls are just one of many hazards competing for attention.
+
+### Fatal Injuries
+
+@tbl-fatal shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had `r mfg_fatal_total` workplace deaths, with `r mfg_fatal_falls` (`r mfg_fall_pct`%) caused by falls. Finance and insurance had `r fin_fatal_total` total deaths, with `r fin_fatal_falls` (`r fin_fall_pct`%) from falls. Professional services had `r pro_fatal_total` deaths, with `r pro_fatal_falls` (`r pro_fall_pct`%) from falls.
+
+```{r}
+#| label: tbl-fatal
+#| tbl-cap: "Fatal occupational injuries by sector (CFOI, 2024)"
+#| echo: false
+
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Total Deaths` = c(mfg_fatal_total, fin_fatal_total, pro_fatal_total),
+  `Deaths from Falls` = c(mfg_fatal_falls, fin_fatal_falls, pro_fatal_falls),
+  `Falls as % of Deaths` = c(
+    paste0(mfg_fall_pct, "%"),
+    paste0(fin_fall_pct, "%"),
+    paste0(pro_fall_pct, "%")
+  )
+) |>
+  kable()
+```
+
+The pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.
+
+### Summary of Key Comparisons
+
+@tbl-summary provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: "Falls as a share of total injuries — nonfatal and fatal comparison"
+#| echo: false
+
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Falls: % of Nonfatal Injuries` = c(
+    paste0(mfg_fall_share, "%"),
+    paste0(fin_fall_share, "%"),
+    paste0(pro_fall_share, "%")
+  ),
+  `Falls: % of Deaths` = c(
+    paste0(mfg_fall_pct, "%"),
+    paste0(fin_fall_pct, "%"),
+    paste0(pro_fall_pct, "%")
+  )
+) |>
+  kable()
+```

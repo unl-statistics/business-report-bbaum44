@@ -1,0 +1,16 @@
+---
+title: "03-methods"
+format: html
+---
+
+Injury rates for three sectors were extracted from the SOII Table R8 using NAICS codes: manufacturing (31–33), finance and insurance (52), and professional, scientific, and technical services (54). Finance and insurance and professional services were selected as the most representative office-type sectors.
+
+For each sector, the following are recorded:
+
+- **Total DAFW rate** — overall nonfatal injury rate per 10,000 FTE workers
+- **Fall-specific DAFW rate** — nonfatal fall injuries per 10,000 FTE workers
+- **Fall share of total injuries** — falls as a percentage of all nonfatal injuries
+
+Fatal injury counts were taken directly from CFOI Table A-1. Fall share of deaths are calculated by dividing fatal falls by total sector deaths.
+
+No statistical tests were conducted. Both the SOII and CFOI represent population-level estimates, so the observed differences between sectors reflect real differences rather than sampling error. 

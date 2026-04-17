@@ -3,29 +3,29 @@ project:
   output-dir: docs
 
 book:
-  title: "Evaluation of <scenario>"
-  author: "Brynn Baumert"
-  page-footer:
-    left: "Copyright 2025, Author Name"
+  title: "Workplace Injury Risk: Office Workers vs. Manufacturing Workers"
+  author: "Brynn"
+  date: today
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-  appendices:
-    - draft-data-doc.qmd
-    - draft-results.qmd
-    - draft-intro-conclusions.qmd
-    - draft-exec-summary.qmd
-
-bibliography: references.bib
-
+    - 01-intro.qmd
+    - 02-data.qmd
+    - 03-methods.qmd
+    - 04-results.qmd
+    - 05-conclusion.qmd
+  references: references1.bib
+ 
+bibliography: references1.bib
+ 
+crossref:
+  fig-title: "Figure"
+  tbl-title: "Table"
+ 
 format:
   html:
-    highlight-style: a11y
     theme: cosmo
+    toc: true
+    number-sections: true
   pdf:
     documentclass: scrreprt
-
-
-
+    number-sections: true

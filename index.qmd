@@ -1,49 +1,27 @@
-# Preface {.unnumbered}
-
-You are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You've been tasked with creating a report evaluating a scenario for your business. 
-Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company's action. 
-The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren't as easy to cut. 
-
-You may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs. 
-
-
+---
+title: "Workplace Injury Risk: Office Workers vs. Manufacturing Workers"
+author: "Brynn"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    crossref:
+      fig-title: "Figure"
+      tbl-title: "Table"
+bibliography: references1.bib
 ---
 
-I've scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.
+## Executive Summary
 
+This report compares workplace injury risk between manufacturing workers and office workers (finance, insurance, and professional services) using 2023–2024 data from the U.S. Bureau of Labor Statistics. The analysis covers both nonfatal injuries and workplace deaths.
 
-The basic steps for this task are as follows:
+Key findings:
 
-- Identify the research question from the business question
+- **Manufacturing workers are injured at a much higher rate overall** — 86.4 injuries per 10,000 workers, compared to 11.0 in finance and insurance and 18.6 in professional services.
+- **Falls make up a disproportionately large share of injuries in office sectors.** Falls account for 33.6% of all injuries in finance and insurance, compared to 21.6% in manufacturing.
+- **The same pattern holds for workplace deaths.** Falls caused 33.3% of deaths in finance and insurance, versus 14.7% in manufacturing.
+- **Recommendation:** Office environments should prioritize fall prevention programs even though overall injury rates are low. Falls are the dominant injury risk in these settings.
 
-- Identify data set(s) which are (1) publicly available (you don't have a budget to pay for private data) and (2) relevant to your task
-
-    - (HW Week 6) Document your data sets in `draft-data-doc.qmd`
-
-- Conduct a statistical analysis to support your answer to your research and business questions
-
-    - Write a methods section for your business report corresponding to your statistical analysis
-
-    - (HW Week 9) Draft of results section of business report with relevant graphics/visual aids in `draft-results.qmd`
-    
-- Write your report
-
-    - (HW Week 10) Draft of Intro/Conclusion sections in `draft-intro-conclusions.qmd`
-    
-    - (HW Week 11) Draft of Executive summary section in `draft-exec-summary.qmd`
-    
-- Revise your report
-
-    - (HW Week 12 -- not turned in) Revise your report
-    
-    - (HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in `_quarto.yml`. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf. 
-    
-    - Develop a presentation to go along with your report (Week 13). Create slides for your report using quarto. 
-
-- Peer revise reports
-
-    - Peer revise reports
-    
-    - (HW Week 14) - Make edits to your report from comments received from peer review
-
-- Final report & presentation due
+---

@@ -1,0 +1,16 @@
+---
+title: "05-conclusion"
+format: html
+---
+
+## Conclusion
+
+This report looked at the workplace injury risk across manufacturing and office sectors using both BLS nonfatal and fatal injury data. The findings confirm that manufacturing workers face much higher injury rates overall, but that falls are disproportionately common in office environments.
+
+As shown in @tbl-nonfatal and @tbl-fatal, falls account for `r fin_fall_share`% of nonfatal injuries and `r fin_fall_pct`% of deaths in finance and insurance. This is more than double the proportion obsewrved in manufacturing. This pattern holds true across both data sources.
+
+These results suggest clear and practical next steps: safety officers in office settings should treat fall prevention as a top priority. Even though overall injury numbers are low, when office workers do get hurt, it is most likely from a fall. Simple changes such as slip-resistant flooring, clear walkways, proper lighting, and employee awareness programs can help to reduce this risk.
+
+There are some limitations to note. The SOII relies on employer self-reporting, which may undercount injuries in workplaces with weaker safety cultures. Broad NAICS categories also include a wide range of job types, so rates may not perfectly represent desk-based workers specifically. Median days away from work (a useful measure of injury severity) was not available in the tables used here and would strengthen future analyses.
+
+Overall, the data makes a clear evidence-backed case for workplace safety,  recognizing fall risk as a significant concern even in low-injury office environments.
