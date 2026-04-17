@@ -13,4 +13,4 @@ These results suggest clear and practical next steps: safety officers in office 
 
 There are some limitations to note. The SOII relies on employer self-reporting, which may undercount injuries in workplaces with weaker safety cultures. Broad NAICS categories also include a wide range of job types, so rates may not perfectly represent desk-based workers specifically. Median days away from work (a useful measure of injury severity) was not available in the tables used here and would strengthen future analyses.
 
-Overall, the data makes a clear evidence-backed case for workplace safety,  recognizing fall risk as a significant concern even in low-injury office environments.
+Overall, the data shows a clear case for workplace safety,  recognizing fall risk as a significant concern even in low-injury office environments.
