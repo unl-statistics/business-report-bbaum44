@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Brynn">
-<meta name="dcterms.date" content="2026-04-17">
 
-<title>Workplace Injury Risk: Office Workers vs.&nbsp;Manufacturing Workers</title>
+<title>3&nbsp; 02-data – Workplace Injury Risk: Office Workers vs. Manufacturing Workers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -32,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro.html" rel="next">
+<link href="./03-methods.html" rel="next">
+<link href="./01-intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workplace Injury Risk: Office Workers vs.&nbsp;Manufacturing Workers</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -109,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workplace Injury Risk: Office Workers vs.&nbsp;Manufacturing Workers</span></span></a>
   </div>
 </li>
@@ -121,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-data.html" class="sidebar-item-text sidebar-link">
+  <a href="./02-data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-data</span></span></a>
   </div>
 </li>
@@ -153,7 +172,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary"><span class="header-section-number">0.1</span> Executive Summary</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data"><span class="header-section-number">3.1</span> Data</a>
+  <ul class="collapse">
+  <li><a href="#nonfatal-injuries-soii" id="toc-nonfatal-injuries-soii" class="nav-link" data-scroll-target="#nonfatal-injuries-soii"><span class="header-section-number">3.1.1</span> Nonfatal Injuries: SOII</a></li>
+  <li><a href="#fatal-injuries-cfoi" id="toc-fatal-injuries-cfoi" class="nav-link" data-scroll-target="#fatal-injuries-cfoi"><span class="header-section-number">3.1.2</span> Fatal Injuries: CFOI</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,26 +185,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Workplace Injury Risk: Office Workers vs.&nbsp;Manufacturing Workers</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Brynn </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 17, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -191,19 +202,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="executive-summary" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="executive-summary"><span class="header-section-number">0.1</span> Executive Summary</h2>
-<p>This report compares workplace injury risk between manufacturing workers and office workers (finance, insurance, and professional services) using 2023–2024 data from the U.S. Bureau of Labor Statistics. The analysis covers both nonfatal injuries and workplace deaths.</p>
-<p>Key findings:</p>
-<ul>
-<li><strong>Manufacturing workers are injured at a much higher rate overall</strong> — 86.4 injuries per 10,000 workers, compared to 11.0 in finance and insurance and 18.6 in professional services.</li>
-<li><strong>Falls make up a disproportionately large share of injuries in office sectors.</strong> Falls account for 33.6% of all injuries in finance and insurance, compared to 21.6% in manufacturing.</li>
-<li><strong>The same pattern holds for workplace deaths.</strong> Falls caused 33.3% of deaths in finance and insurance, versus 14.7% in manufacturing.</li>
-<li><strong>Recommendation:</strong> Office environments should prioritize fall prevention programs even though overall injury rates are low. Falls are the dominant injury risk in these settings.</li>
-</ul>
-<hr>
+<section id="data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h2>
+<section id="nonfatal-injuries-soii" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="nonfatal-injuries-soii"><span class="header-section-number">3.1.1</span> Nonfatal Injuries: SOII</h3>
+<p>The Survey of Occupational Injuries and Illnesses (SOII) is published annually by the BLS, as required by the Occupational Safety and Health Act of 1970 <span class="citation" data-cites="bls_soii_tables">(<a href="#ref-bls_soii_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.b</a>)</span>. It surveys approximately 200,000 employers and reports injury rates per 10,000 full-time equivalent (FTE) workers. The most recent release covers 2023–2024 <span class="citation" data-cites="bls_soii_2024">(<a href="#ref-bls_soii_2024" role="doc-biblioref">Bureau of Labor Statistics 2026b</a>)</span>.</p>
+<p>For this report, we used Table R8, which breaks down nonfatal injury rates by industry and event type (including falls, slips, and trips). We focused on Days Away From Work (DAFW) rates, which capture injuries serious enough to keep workers out of work.</p>
+</section>
+<section id="fatal-injuries-cfoi" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="fatal-injuries-cfoi"><span class="header-section-number">3.1.2</span> Fatal Injuries: CFOI</h3>
+<p>The Census of Fatal Occupational Injuries (CFOI) is an annual count of every workplace death in the United States <span class="citation" data-cites="bls_cfoi_tables">(<a href="#ref-bls_cfoi_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.a</a>)</span>. Unlike the SOII, which is a sample survey, the CFOI verifies each case using multiple independent sources such as death certificates, OSHA reports, and workers’ compensation records. The most recent release covers 2024 <span class="citation" data-cites="bls_cfoi_2024">(<a href="#ref-bls_cfoi_2024" role="doc-biblioref">Bureau of Labor Statistics 2026a</a>)</span>.</p>
+<p>We used Table A-1, which reports fatal injury counts by industry and event type, including falls.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bls_cfoi_2024" class="csl-entry" role="listitem">
+Bureau of Labor Statistics. 2026a. <span>“Census of Fatal Occupational Injuries Summary, 2024.”</span> https://www.bls.gov/news.release/cfoi.nr0.htm.
+</div>
+<div id="ref-bls_soii_2024" class="csl-entry" role="listitem">
+———. 2026b. <span>“Employer-Reported Workplace Injuries and Illnesses, 2023–2024.”</span> https://www.bls.gov/news.release/osh.nr0.htm.
+</div>
+<div id="ref-bls_cfoi_tables" class="csl-entry" role="listitem">
+———. n.d.a. <span>“Census of Fatal Occupational Injuries (<span>CFOI</span>) — Current and Revised Data.”</span> https://www.bls.gov/iif/fatal-injuries-tables.htm. Accessed February 21, 2026.
+</div>
+<div id="ref-bls_soii_tables" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Survey of Occupational Injuries and Illnesses Data.”</span> https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm. Accessed February 21, 2026.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -626,10 +652,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./01-intro.html" class="pagination-link" aria-label="01-intro">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01-intro</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro.html" class="pagination-link" aria-label="01-intro">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01-intro</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03-methods.html" class="pagination-link" aria-label="03-methods">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03-methods</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
