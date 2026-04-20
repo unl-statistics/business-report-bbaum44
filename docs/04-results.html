@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Data – Workplace Injury Risk: Office Workers vs. Manufacturing Workers</title>
+<title>5&nbsp; Results – Workplace Injury Risk: Office Workers vs. Manufacturing Workers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./03-methods.html" rel="next">
-<link href="./01-intro.html" rel="prev">
+<link href="./05-conclusion.html" rel="next">
+<link href="./03-methods.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -101,7 +81,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-results.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -140,7 +120,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-data.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data</span></span></a>
   </div>
 </li>
@@ -152,7 +132,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-results.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-results.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></span></a>
   </div>
 </li>
@@ -172,10 +152,12 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data"><span class="header-section-number">3.1</span> Data</a>
+  <li><a href="#results" id="toc-results" class="nav-link active" data-scroll-target="#results"><span class="header-section-number">5.1</span> Results</a>
   <ul class="collapse">
-  <li><a href="#nonfatal-injuries-soii" id="toc-nonfatal-injuries-soii" class="nav-link" data-scroll-target="#nonfatal-injuries-soii"><span class="header-section-number">3.1.1</span> Nonfatal Injuries: SOII</a></li>
-  <li><a href="#fatal-injuries-cfoi" id="toc-fatal-injuries-cfoi" class="nav-link" data-scroll-target="#fatal-injuries-cfoi"><span class="header-section-number">3.1.2</span> Fatal Injuries: CFOI</a></li>
+  <li><a href="#nonfatal-injury-rates" id="toc-nonfatal-injury-rates" class="nav-link" data-scroll-target="#nonfatal-injury-rates"><span class="header-section-number">5.1.1</span> Nonfatal Injury Rates</a></li>
+  <li><a href="#fall-specific-risk" id="toc-fall-specific-risk" class="nav-link" data-scroll-target="#fall-specific-risk"><span class="header-section-number">5.1.2</span> Fall-Specific Risk</a></li>
+  <li><a href="#fatal-injuries" id="toc-fatal-injuries" class="nav-link" data-scroll-target="#fatal-injuries"><span class="header-section-number">5.1.3</span> Fatal Injuries</a></li>
+  <li><a href="#summary-of-key-comparisons" id="toc-summary-of-key-comparisons" class="nav-link" data-scroll-target="#summary-of-key-comparisons"><span class="header-section-number">5.1.4</span> Summary of Key Comparisons</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -185,7 +167,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></h1>
 </div>
 
 
@@ -202,33 +184,163 @@ div.csl-indent {
 </header>
 
 
-<section id="data" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h2>
-<section id="nonfatal-injuries-soii" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="nonfatal-injuries-soii"><span class="header-section-number">3.1.1</span> Nonfatal Injuries: SOII</h3>
-<p>The Survey of Occupational Injuries and Illnesses (SOII) is published annually by the BLS, as required by the Occupational Safety and Health Act of 1970 <span class="citation" data-cites="bls_soii_tables">(<a href="#ref-bls_soii_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.b</a>)</span>. It surveys approximately 200,000 employers and reports injury rates per 10,000 full-time equivalent (FTE) workers. The most recent release covers 2023–2024 <span class="citation" data-cites="bls_soii_2024">(<a href="#ref-bls_soii_2024" role="doc-biblioref">Bureau of Labor Statistics 2026b</a>)</span>.</p>
-<p>For this report, we used Table R8, which breaks down nonfatal injury rates by industry and event type (including falls, slips, and trips). We focused on Days Away From Work (DAFW) rates, which capture injuries serious enough to keep workers out of work.</p>
+<section id="results" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="results"><span class="header-section-number">5.1</span> Results</h2>
+<section id="nonfatal-injury-rates" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="nonfatal-injury-rates"><span class="header-section-number">5.1.1</span> Nonfatal Injury Rates</h3>
+<p>As shown in <a href="#tbl-nonfatal" class="quarto-xref">Table&nbsp;<span>5.1</span></a>, manufacturing workers experienced a total nonfatal injury rate of 86.4 per 10,000 FTE workers — roughly 8 times higher than the rate in finance and insurance (11) and 4.6 times higher than professional services (18.6).</p>
+<div class="cell">
+<div id="tbl-nonfatal" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-nonfatal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.1: Nonfatal injury rates per 10,000 FTE workers by sector (SOII, 2023–2024)
+</figcaption>
+<div aria-describedby="tbl-nonfatal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sector</th>
+<th style="text-align: right;">Total Rate</th>
+<th style="text-align: right;">Fall Rate</th>
+<th style="text-align: left;">Falls as % of Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: right;">86.4</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: left;">21.6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Finance &amp; Insurance</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: left;">33.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Professional Services</td>
+<td style="text-align: right;">18.6</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: left;">23.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
 </section>
-<section id="fatal-injuries-cfoi" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="fatal-injuries-cfoi"><span class="header-section-number">3.1.2</span> Fatal Injuries: CFOI</h3>
-<p>The Census of Fatal Occupational Injuries (CFOI) is an annual count of every workplace death in the United States <span class="citation" data-cites="bls_cfoi_tables">(<a href="#ref-bls_cfoi_tables" role="doc-biblioref">Bureau of Labor Statistics n.d.a</a>)</span>. Unlike the SOII, which is a sample survey, the CFOI verifies each case using multiple independent sources such as death certificates, OSHA reports, and workers’ compensation records. The most recent release covers 2024 <span class="citation" data-cites="bls_cfoi_2024">(<a href="#ref-bls_cfoi_2024" role="doc-biblioref">Bureau of Labor Statistics 2026a</a>)</span>.</p>
-<p>We used Table A-1, which reports fatal injury counts by industry and event type, including falls.</p>
+<section id="fall-specific-risk" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="fall-specific-risk"><span class="header-section-number">5.1.2</span> Fall-Specific Risk</h3>
+<p>While manufacturing workers have more falls in absolute terms, falls represent a much larger <em>proportion</em> of injuries in office sectors. As seen in <a href="#tbl-nonfatal" class="quarto-xref">Table&nbsp;<span>5.1</span></a>, falls account for 33.6% of all nonfatal injuries in finance and insurance, and 23.1% in professional services — compared to just 21.6% in manufacturing.</p>
+<p>This means that in office environments, falls are the dominant injury type. In manufacturing, falls are just one of many hazards competing for attention.</p>
+</section>
+<section id="fatal-injuries" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="fatal-injuries"><span class="header-section-number">5.1.3</span> Fatal Injuries</h3>
+<p><a href="#tbl-fatal" class="quarto-xref">Table&nbsp;<span>5.2</span></a> shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had 353 workplace deaths, with 52 (14.7%) caused by falls. Finance and insurance had 18 total deaths, with 6 (33.3%) from falls. Professional services had 65 deaths, with 10 (15.4%) from falls.</p>
+<div class="cell">
+<div id="tbl-fatal" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fatal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.2: Fatal occupational injuries by sector (CFOI, 2024)
+</figcaption>
+<div aria-describedby="tbl-fatal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 17%">
+<col style="width: 24%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sector</th>
+<th style="text-align: right;">Total Deaths</th>
+<th style="text-align: right;">Deaths from Falls</th>
+<th style="text-align: left;">Falls as % of Deaths</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: right;">353</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">14.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Finance &amp; Insurance</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">33.3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Professional Services</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">15.4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.</p>
+</section>
+<section id="summary-of-key-comparisons" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="summary-of-key-comparisons"><span class="header-section-number">5.1.4</span> Summary of Key Comparisons</h3>
+<p><a href="#tbl-summary" class="quarto-xref">Table&nbsp;<span>5.3</span></a> provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.</p>
+<div class="cell">
+<div id="tbl-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.3: Falls as a share of total injuries — nonfatal and fatal comparison
+</figcaption>
+<div aria-describedby="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 42%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sector</th>
+<th style="text-align: left;">Falls: % of Nonfatal Injuries</th>
+<th style="text-align: left;">Falls: % of Deaths</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">21.6%</td>
+<td style="text-align: left;">14.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Finance &amp; Insurance</td>
+<td style="text-align: left;">33.6%</td>
+<td style="text-align: left;">33.3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Professional Services</td>
+<td style="text-align: left;">23.1%</td>
+<td style="text-align: left;">15.4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-bls_cfoi_2024" class="csl-entry" role="listitem">
-Bureau of Labor Statistics. 2026a. <span>“Census of Fatal Occupational Injuries Summary, 2024.”</span> https://www.bls.gov/news.release/cfoi.nr0.htm.
-</div>
-<div id="ref-bls_soii_2024" class="csl-entry" role="listitem">
-———. 2026b. <span>“Employer-Reported Workplace Injuries and Illnesses, 2023–2024.”</span> https://www.bls.gov/news.release/osh.nr0.htm.
-</div>
-<div id="ref-bls_cfoi_tables" class="csl-entry" role="listitem">
-———. n.d.a. <span>“Census of Fatal Occupational Injuries (<span>CFOI</span>) — Current and Revised Data.”</span> https://www.bls.gov/iif/fatal-injuries-tables.htm. Accessed February 21, 2026.
-</div>
-<div id="ref-bls_soii_tables" class="csl-entry" role="listitem">
-———. n.d.b. <span>“Survey of Occupational Injuries and Illnesses Data.”</span> https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm. Accessed February 21, 2026.
-</div>
-</div>
 </section>
 </section>
 
@@ -652,13 +764,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./01-intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./03-methods.html" class="pagination-link" aria-label="Methods">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03-methods.html" class="pagination-link" aria-label="Methods">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./05-conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

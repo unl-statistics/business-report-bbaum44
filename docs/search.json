@@ -98,11 +98,91 @@
   {
     "objectID": "05-conclusion.html",
     "href": "05-conclusion.html",
-    "title": "6  05-conclusion",
+    "title": "6  Conclusion",
     "section": "",
-    "text": "6.1 Conclusion\nThis report looked at the workplace injury risk across manufacturing and office sectors using both BLS nonfatal and fatal injury data. The findings confirm that manufacturing workers face much higher injury rates overall, but that falls are disproportionately common in office environments.\nAs shown in ?tbl-nonfatal and ?tbl-fatal, falls account for r fin_fall_share% of nonfatal injuries and r fin_fall_pct% of deaths in finance and insurance. This is more than double the proportion obsewrved in manufacturing. This pattern holds true across both data sources.\nThese results suggest clear and practical next steps: safety officers in office settings should treat fall prevention as a top priority. Even though overall injury numbers are low, when office workers do get hurt, it is most likely from a fall. Simple changes such as slip-resistant flooring, clear walkways, proper lighting, and employee awareness programs can help to reduce this risk.\nThere are some limitations to note. The SOII relies on employer self-reporting, which may undercount injuries in workplaces with weaker safety cultures. Broad NAICS categories also include a wide range of job types, so rates may not perfectly represent desk-based workers specifically. Median days away from work (a useful measure of injury severity) was not available in the tables used here and would strengthen future analyses.\nOverall, the data shows a clear case for workplace safety, recognizing fall risk as a significant concern even in low-injury office environments.",
+    "text": "6.1 Conclusion\nThis report looked at the workplace injury risk across manufacturing and office sectors using both BLS nonfatal and fatal injury data. The findings confirm that manufacturing workers face much higher injury rates overall, but that falls are disproportionately common in office environments.\nThe nonfatal injury data showed that falls account for 33.6% of all injuries in finance and insurance, compared to just 21.6% in manufacturing. The fatal injury data showed the same pattern: falls caused 33.3% of deaths in finance and insurance versus 14.7% in manufacturing. T\nThese results suggest clear and practical next steps: safety officers in office settings should treat fall prevention as a top priority. Even though overall injury numbers are low, when office workers do get hurt, it is most likely from a fall. Simple changes such as slip-resistant flooring, clear walkways, proper lighting, and employee awareness programs can help to reduce this risk.\nThere are some limitations to note. The SOII relies on employer self-reporting, which may undercount injuries in workplaces with weaker safety cultures. Broad NAICS categories also include a wide range of job types, so rates may not perfectly represent desk-based workers specifically. Median days away from work (a useful measure of injury severity) was not available in the tables used here and would strengthen future analyses.\nOverall, the data shows a clear case for workplace safety, recognizing fall risk as a significant concern even in low-injury office environments.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>05-conclusion</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "03-methods.html",
+    "href": "03-methods.html",
+    "title": "4  Methods",
+    "section": "",
+    "text": "Injury rates for three sectors were extracted from the SOII Table R8 using NAICS codes: manufacturing (31–33), finance and insurance (52), and professional, scientific, and technical services (54). Finance and insurance and professional services were selected as the most representative office-type sectors.\nFor each sector, the following are recorded:\n\nTotal DAFW rate — overall nonfatal injury rate per 10,000 FTE workers\nFall-specific DAFW rate — nonfatal fall injuries per 10,000 FTE workers\nFall share of total injuries — falls as a percentage of all nonfatal injuries\n\nFatal injury counts were taken directly from CFOI Table A-1. Fall share of deaths are calculated by dividing fatal falls by total sector deaths.\nNo statistical tests were conducted. Both the SOII and CFOI represent population-level estimates, so the observed differences between sectors reflect real differences rather than sampling error.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Workplace Injury Risk: Office Workers vs. Manufacturing Workers",
+    "section": "",
+    "text": "0.1 Executive Summary\nThis report compares workplace injury risk between manufacturing workers and office workers (finance, insurance, and professional services) using 2023–2024 data from the U.S. Bureau of Labor Statistics. The analysis covers both nonfatal injuries and workplace deaths.\nKey findings:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#executive-summary",
+    "href": "index.html#executive-summary",
+    "title": "Workplace Injury Risk: Office Workers vs. Manufacturing Workers",
+    "section": "",
+    "text": "Manufacturing workers are injured at a much higher rate overall — 86.4 injuries per 10,000 workers, compared to 11.0 in finance and insurance and 18.6 in professional services.\nFalls make up a disproportionately large share of injuries in office sectors. Falls account for 33.6% of all injuries in finance and insurance, compared to 21.6% in manufacturing.\nThe same pattern holds for workplace deaths. Falls caused 33.3% of deaths in finance and insurance, versus 14.7% in manufacturing.\nRecommendation: Office environments should prioritize fall prevention programs even though overall injury rates are low. Falls are the dominant injury risk in these settings.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "01-intro.html",
+    "href": "01-intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "2.1 Introduction\nMost people assume that factories are far more dangerous than offices, and when it comes to overall injury rates, that assumption is correct. Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors.\nBut one specific hazard tells a more complicated story: falls. Slippery floors, cluttered walkways, and everyday movement in office settings can lead to falls that cause serious injuries. Understanding how fall risk compares across sectors matters for safety officers who need to allocate resources effectively.\nThis report addresses the question: Are office workers at greater risk of falls than manufacturing workers, and how do injuries compare in severity? To answer this, we use two federal datasets from the Bureau of Labor Statistics (BLS) that together cover the full spectrum of workplace injury, from minor incidents requiring days off work to fatal injuries.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html",
+    "href": "02-data.html",
+    "title": "3  Data",
+    "section": "",
+    "text": "3.1 Data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html#data",
+    "href": "02-data.html#data",
+    "title": "3  Data",
+    "section": "",
+    "text": "3.1.1 Nonfatal Injuries: SOII\nThe Survey of Occupational Injuries and Illnesses (SOII) is published annually by the BLS, as required by the Occupational Safety and Health Act of 1970 (Bureau of Labor Statistics n.d.b). It surveys approximately 200,000 employers and reports injury rates per 10,000 full-time equivalent (FTE) workers. The most recent release covers 2023–2024 (Bureau of Labor Statistics 2026b).\nFor this report, we used Table R8, which breaks down nonfatal injury rates by industry and event type (including falls, slips, and trips). We focused on Days Away From Work (DAFW) rates, which capture injuries serious enough to keep workers out of work.\n\n\n3.1.2 Fatal Injuries: CFOI\nThe Census of Fatal Occupational Injuries (CFOI) is an annual count of every workplace death in the United States (Bureau of Labor Statistics n.d.a). Unlike the SOII, which is a sample survey, the CFOI verifies each case using multiple independent sources such as death certificates, OSHA reports, and workers’ compensation records. The most recent release covers 2024 (Bureau of Labor Statistics 2026a).\nWe used Table A-1, which reports fatal injury counts by industry and event type, including falls.\n\n\n\n\nBureau of Labor Statistics. 2026a. “Census of Fatal Occupational Injuries Summary, 2024.” https://www.bls.gov/news.release/cfoi.nr0.htm.\n\n\n———. 2026b. “Employer-Reported Workplace Injuries and Illnesses, 2023–2024.” https://www.bls.gov/news.release/osh.nr0.htm.\n\n\n———. n.d.a. “Census of Fatal Occupational Injuries (CFOI) — Current and Revised Data.” https://www.bls.gov/iif/fatal-injuries-tables.htm. Accessed February 21, 2026.\n\n\n———. n.d.b. “Survey of Occupational Injuries and Illnesses Data.” https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm. Accessed February 21, 2026.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html",
+    "href": "04-results.html",
+    "title": "5  Results",
+    "section": "",
+    "text": "5.1 Results",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html#results",
+    "href": "04-results.html#results",
+    "title": "5  Results",
+    "section": "",
+    "text": "5.1.1 Nonfatal Injury Rates\nAs shown in Table 5.1, manufacturing workers experienced a total nonfatal injury rate of 86.4 per 10,000 FTE workers — roughly 8 times higher than the rate in finance and insurance (11) and 4.6 times higher than professional services (18.6).\n\n\n\n\nTable 5.1: Nonfatal injury rates per 10,000 FTE workers by sector (SOII, 2023–2024)\n\n\n\n\n\n\nSector\nTotal Rate\nFall Rate\nFalls as % of Total\n\n\n\n\nManufacturing\n86.4\n18.7\n21.6%\n\n\nFinance & Insurance\n11.0\n3.7\n33.6%\n\n\nProfessional Services\n18.6\n4.3\n23.1%\n\n\n\n\n\n\n\n\n\n\n5.1.2 Fall-Specific Risk\nWhile manufacturing workers have more falls in absolute terms, falls represent a much larger proportion of injuries in office sectors. As seen in Table 5.1, falls account for 33.6% of all nonfatal injuries in finance and insurance, and 23.1% in professional services — compared to just 21.6% in manufacturing.\nThis means that in office environments, falls are the dominant injury type. In manufacturing, falls are just one of many hazards competing for attention.\n\n\n5.1.3 Fatal Injuries\nTable 5.2 shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had 353 workplace deaths, with 52 (14.7%) caused by falls. Finance and insurance had 18 total deaths, with 6 (33.3%) from falls. Professional services had 65 deaths, with 10 (15.4%) from falls.\n\n\n\n\nTable 5.2: Fatal occupational injuries by sector (CFOI, 2024)\n\n\n\n\n\n\n\n\n\n\n\n\nSector\nTotal Deaths\nDeaths from Falls\nFalls as % of Deaths\n\n\n\n\nManufacturing\n353\n52\n14.7%\n\n\nFinance & Insurance\n18\n6\n33.3%\n\n\nProfessional Services\n65\n10\n15.4%\n\n\n\n\n\n\n\n\nThe pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.\n\n\n5.1.4 Summary of Key Comparisons\nTable 5.3 provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.\n\n\n\n\nTable 5.3: Falls as a share of total injuries — nonfatal and fatal comparison\n\n\n\n\n\n\n\n\n\n\n\nSector\nFalls: % of Nonfatal Injuries\nFalls: % of Deaths\n\n\n\n\nManufacturing\n21.6%\n14.7%\n\n\nFinance & Insurance\n33.6%\n33.3%\n\n\nProfessional Services\n23.1%\n15.4%",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
     ]
   }
 ]
