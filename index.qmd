@@ -1,17 +1,8 @@
+
 ---
-title: "Workplace Injury Risk: Office Workers vs. Manufacturing Workers"
-author: "Brynn"
-date: today
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    crossref:
-      fig-title: "Figure"
-      tbl-title: "Table"
-bibliography: references1.bib
+title: "Executive Summary"
 ---
+
 
 ## Executive Summary
 

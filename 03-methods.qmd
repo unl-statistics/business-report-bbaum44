@@ -1,6 +1,5 @@
 ---
-title: "03-methods"
-format: html
+title: "Methods"
 ---
 
 Injury rates for three sectors were extracted from the SOII Table R8 using NAICS codes: manufacturing (31–33), finance and insurance (52), and professional, scientific, and technical services (54). Finance and insurance and professional services were selected as the most representative office-type sectors.

@@ -1,13 +1,36 @@
 ---
-title: "05-conclusion"
-format: html
+title: "Conclusion"
 ---
+```{r conclusion-setup, include=FALSE}
+library(readxl)
+library(tidyverse)
+
+r8_data <- read_excel(
+  "case-and-demographic-characteristics-table-r8-2023-2024.xlsx",
+  col_names = FALSE
+)[-c(1, 2), ]
+
+names(r8_data)[2]  <- "naics"
+names(r8_data)[3]  <- "case_type"
+names(r8_data)[4]  <- "total_rate"
+names(r8_data)[10] <- "fall_rate"
+
+mfg_total <- as.numeric(r8_data |> filter(naics == "31-33", case_type == "DAFW") |> pull(total_rate) |> first())
+mfg_falls <- as.numeric(r8_data |> filter(naics == "31-33", case_type == "DAFW") |> pull(fall_rate)  |> first())
+fin_total  <- as.numeric(r8_data |> filter(naics == "52",   case_type == "DAFW") |> pull(total_rate) |> first())
+fin_falls  <- as.numeric(r8_data |> filter(naics == "52",   case_type == "DAFW") |> pull(fall_rate)  |> first())
+
+fin_fall_share <- round(fin_falls / fin_total * 100, 1)
+mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
+fin_fall_pct   <- round(6  / 18  * 100, 1)
+mfg_fall_pct   <- round(52 / 353 * 100, 1)
+```
 
 ## Conclusion
 
 This report looked at the workplace injury risk across manufacturing and office sectors using both BLS nonfatal and fatal injury data. The findings confirm that manufacturing workers face much higher injury rates overall, but that falls are disproportionately common in office environments.
 
-As shown in @tbl-nonfatal and @tbl-fatal, falls account for `r fin_fall_share`% of nonfatal injuries and `r fin_fall_pct`% of deaths in finance and insurance. This is more than double the proportion obsewrved in manufacturing. This pattern holds true across both data sources.
+The nonfatal injury data showed that falls account for `r fin_fall_share`% of all injuries in finance and insurance, compared to just `r mfg_fall_share`% in manufacturing. The fatal injury data showed the same pattern: falls caused `r fin_fall_pct`% of deaths in finance and insurance versus `r mfg_fall_pct`% in manufacturing. T
 
 These results suggest clear and practical next steps: safety officers in office settings should treat fall prevention as a top priority. Even though overall injury numbers are low, when office workers do get hurt, it is most likely from a fall. Simple changes such as slip-resistant flooring, clear walkways, proper lighting, and employee awareness programs can help to reduce this risk.
 

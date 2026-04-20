@@ -1,6 +1,5 @@
 ---
-title: "02-data"
-format: html
+title: "Data"
 ---
 
 ```{r setup, include=FALSE}
