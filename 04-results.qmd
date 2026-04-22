@@ -42,7 +42,6 @@ fin_fall_pct <- round(fin_fatal_falls / fin_fatal_total * 100, 1)
 pro_fall_pct <- round(pro_fatal_falls / pro_fatal_total * 100, 1)
 ```
 
-## Results
 
 ### Nonfatal Injury Rates
 
