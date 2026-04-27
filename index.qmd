@@ -3,16 +3,83 @@
 title: "Executive Summary"
 ---
 
+```{r index-setup, include=FALSE}
+library(readxl)
+library(tidyverse)
+library(knitr)
 
-## Executive Summary
+# R8: Nonfatal by industry
+r8_data <- read_excel(
+  "case-and-demographic-characteristics-table-r8-2023-2024.xlsx",
+  col_names = FALSE)[-c(1,2), ]
 
-This report compares workplace injury risk between manufacturing workers and office workers (finance, insurance, and professional services) using 2023–2024 data from the U.S. Bureau of Labor Statistics. The analysis covers both nonfatal injuries and workplace deaths.
+names(r8_data)[1]  <- "industry"
+names(r8_data)[2]  <- "naics"
+names(r8_data)[3]  <- "case_type"
+names(r8_data)[4]  <- "total_rate"
+names(r8_data)[10] <- "fall_rate"
 
-Key findings:
+mfg <- r8_data |> filter(naics == "31-33", case_type == "DAFW")
+fin <- r8_data |> filter(naics == "52",    case_type == "DAFW")
+pro <- r8_data |> filter(naics == "54",    case_type == "DAFW")
 
-- **Manufacturing workers are injured at a much higher rate overall** — 86.4 injuries per 10,000 workers, compared to 11.0 in finance and insurance and 18.6 in professional services.
-- **Falls make up a disproportionately large share of injuries in office sectors.** Falls account for 33.6% of all injuries in finance and insurance, compared to 21.6% in manufacturing.
-- **The same pattern holds for workplace deaths.** Falls caused 33.3% of deaths in finance and insurance, versus 14.7% in manufacturing.
-- **Recommendation:** Office environments should prioritize fall prevention programs even though overall injury rates are low. Falls are the dominant injury risk in these settings.
+mfg_total <- as.numeric(mfg$total_rate[1])
+mfg_falls <- as.numeric(mfg$fall_rate[1])
+fin_total  <- as.numeric(fin$total_rate[1])
+fin_falls  <- as.numeric(fin$fall_rate[1])
+pro_total  <- as.numeric(pro$total_rate[1])
+pro_falls  <- as.numeric(pro$fall_rate[1])
 
----
+mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
+fin_fall_share  <- round(fin_falls  / fin_total  * 100, 1)
+pro_fall_share  <- round(pro_falls  / pro_total  * 100, 1)
+
+# Fatal: extracted from file 
+fatal_df <- as.data.frame(
+  read_excel("fatal.xlsx", col_names = FALSE))
+
+mfg_fatal_total <- as.numeric(fatal_df[143, 3])
+mfg_fatal_falls <- as.numeric(fatal_df[143, 7])
+fin_fatal_total <- as.numeric(fatal_df[453, 3])
+fin_fatal_falls <- as.numeric(fatal_df[453, 7])
+pro_fatal_total <- as.numeric(fatal_df[488, 3])
+pro_fatal_falls <- as.numeric(fatal_df[488, 7])
+
+mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
+fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
+pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
+```
+
+This report compares workplace injury risk between manufacturing workers and
+office-sector workers using 2023–2024 federal data from the U.S. Bureau of
+Labor Statistics. Two datasets are used: the Survey of Occupational Injuries
+and Illnesses (SOII, Table R8) for nonfatal injuries, and the Census of Fatal
+Occupational Injuries (CFOI) for workplace deaths.
+
+::: {.callout-note}
+## Research Question
+Are office workers at greater risk of injury — particularly falls — than
+manufacturing workers, and how does injury severity compare?
+:::
+
+## Key Findings
+
+- **Manufacturing workers are injured far more often overall.** The nonfatal
+  injury rate in manufacturing is `r mfg_total` per 10,000 workers —
+  `r round(mfg_total / fin_total, 0)` times higher than in finance and
+  insurance (`r fin_total`).
+
+- **Falls dominate in office environments.** Falls account for
+  `r fin_fall_share`% of all nonfatal injuries in finance and insurance,
+  compared to just `r mfg_fall_share`% in manufacturing. When an office
+  worker is injured, it is most likely from a fall.
+
+- **The fatal data confirms the pattern.** Falls caused `r fin_fall_pct`% of
+  deaths in finance and insurance versus `r mfg_fall_pct`% in manufacturing —
+  consistent across both nonfatal and fatal measures.
+
+::: {.callout-important}
+## Recommendation
+Safety officers in office environments should treat fall prevention as a top
+priority even though overall injury counts appear low. Targeted measures such as 
+slip-resistant flooring, clear walkway policies, and employee awareness programs can meaningfully reduce this risk.

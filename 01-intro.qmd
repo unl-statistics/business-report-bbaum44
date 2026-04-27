@@ -1,13 +1,40 @@
 ---
 title: "Introduction"
-
 ---
 
-Most people assume that factories are far more dangerous than offices,  and when it comes to overall injury rates, that assumption is correct. Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors.
+Every year, millions of American workers experience occupational injuries that
+keep them away from work. These injuries produce substantial costs for both the employer and employee. Understanding where these injuries occur and why injuries happen is the first step toward preventing them.
+
+A common assumption in workplace safety is that physically demanding industries
+like manufacturing are dangerous while office environments are relatively safe, and when it comes to overall injury rates, this assumption holds broadly correct.Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors, while office workers spend most of theirtime in controlled environments with few obvious physical hazards.
 
 But one specific hazard tells a more complicated story: falls. Slippery floors, cluttered walkways, and everyday movement in office settings can lead to falls that cause serious injuries. Understanding how fall risk compares across sectors matters for safety officers who need to allocate resources effectively.
 
 This report addresses the question: *Are office workers at greater risk of falls than manufacturing workers, and how do injuries compare in severity?* To answer this, we use two federal datasets from the Bureau of Labor Statistics (BLS) that together cover the full spectrum of workplace injury,  from minor incidents requiring days off work to fatal injuries.
 
+::: {.callout-note}
+## Research Question
+Are office workers at greater risk of injury from falls than manufacturing
+workers, and how does injury severity compare between these sectors?
+:::
+
+## Scope
+
+This analysis focuses on three industry sectors:
+
+- **Manufacturing (NAICS 31–33):** Representing industries with heavy physical labor and industrial hazards.
+- **Finance and Insurance (NAICS 52):** A representative office-based sector
+- **Professional, Scientific, and Technical Services (NAICS 54):** A second broder range of office-workers
+
+Nonfatal injury data comes from the SOII (Table R8). Fatal injury data comes
+from the CFOI (Table A-1). Together these two sources cover the full severity
+spectrum from serious nonfatal injuries to workplace deaths.
+
+::: {.callout-tip}
+## Why Two Data Sources?
+The SOII measures nonfatal injuries only. The CFOI measures fatal injuries
+only. Using both together allows us to compare fall risk across the full
+severity spectrum.
+:::
 
 ---

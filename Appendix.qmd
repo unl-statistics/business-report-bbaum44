@@ -1,0 +1,38 @@
+---
+title: "Appendix"
+format: html
+---
+
+
+## Appendix A: Raw Data File Details
+
+| File | Source | Rows | Columns | Key Variables Used |
+|---|---|---|---|---|
+| `case-and-demographic-characteristics-table-r8-2023-2024.xlsx` | BLS SOII | ~1,200 | 23 | col 2 (NAICS), col 3 (case type), col 4 (total rate), col 10 (fall rate) |
+| `fatal.xlsx` | BLS CFOI | ~550 | 9 | col 3 (total fatal), col 7 (fatal falls) |
+
+Both files are public domain U.S. government works available at
+[bls.gov](https://www.bls.gov/iif).
+
+
+## Appendix B: NAICS Sector Codes Used
+
+| Sector | NAICS Code | Description |
+|---|---|---|
+| Manufacturing | 31–33 | All manufacturing industries combined |
+| Finance & Insurance | 52 | Banks, insurers, investment firms |
+| Professional Services | 54 | Legal, accounting, engineering, consulting |
+
+These are the broadest-level NAICS codes available in the R8 table, ensuring
+sector-wide averages rather than sub-industry figures.
+
+
+
+## Appendix C: Suppressed Values
+
+
+:::
+
+
+
+

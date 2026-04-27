@@ -1,0 +1,226 @@
+---
+title: "Workplace Injury Risk"
+subtitle: "Office Workers vs. Manufacturing Workers"
+author: "Brynn Baumert"
+date: today
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    self-contained: true
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(tidyverse)
+library(knitr)
+
+r8_data <- read_excel(
+  "case-and-demographic-characteristics-table-r8-2023-2024.xlsx",
+  col_names = FALSE)
+
+r8_data <- r8_data[-c(1,2), ]
+
+names(r8_data)[2]  <- "naics"
+names(r8_data)[3]  <- "case_type"
+names(r8_data)[4]  <- "total_rate"
+names(r8_data)[10] <- "fall_rate"
+
+mfg <- r8_data %>% filter(naics == "31-33", case_type == "DAFW")
+fin <- r8_data %>% filter(naics == "52",    case_type == "DAFW")
+pro <- r8_data %>% filter(naics == "54",    case_type == "DAFW")
+
+mfg_total <- as.numeric(mfg$total_rate[1])
+mfg_falls <- as.numeric(mfg$fall_rate[1])
+fin_total  <- as.numeric(fin$total_rate[1])
+fin_falls  <- as.numeric(fin$fall_rate[1])
+pro_total  <- as.numeric(pro$total_rate[1])
+pro_falls  <- as.numeric(pro$fall_rate[1])
+
+mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
+fin_fall_share  <- round(fin_falls  / fin_total  * 100, 1)
+pro_fall_share  <- round(pro_falls  / pro_total  * 100, 1)
+
+fatal_df <- as.data.frame(read_excel("fatal.xlsx", col_names = FALSE))
+
+mfg_fatal_total <- as.numeric(fatal_df[143, 3])
+mfg_fatal_falls <- as.numeric(fatal_df[143, 7])
+fin_fatal_total <- as.numeric(fatal_df[453, 3])
+fin_fatal_falls <- as.numeric(fatal_df[453, 7])
+pro_fatal_total <- as.numeric(fatal_df[488, 3])
+pro_fatal_falls <- as.numeric(fatal_df[488, 7])
+
+mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
+fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
+pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
+```
+
+
+## Which Worker Do You Think Is at Greater Risk?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](manu.jpg)
+
+**Manufacturing Worker**
+Sparks. Machinery. Hard hats.
+:::
+
+::: {.column width="50%"}
+![](fall.jpg)
+
+**Office Worker**
+Spreadsheets. Coffee. Stairs.
+:::
+
+::::
+
+## Research Question
+
+A workplace safety officer needs to decide where to focus resources.
+
+> Are office workers at greater risk of injury from falls than manufacturing
+> workers — and how does injury severity compare?
+
+Most people assume falls are a manufacturing problem, but the data paints a slightly different picture
+
+## Why This Matters
+
+- Workplace injuries cost U.S. employers billions each year in lost
+  productivity, workers' compensation, and healthcare
+- Safety officers have limited budgets — they need to know where to focus
+- If falls are primarily a manufacturing problem, office programs can focus
+  elsewhere
+- But if falls dominate the office injury profile, that changes how employers approach injury prevention
+
+## Data Sources
+
+Two federal datasets from the U.S. Bureau of Labor Statistics:
+
+| Dataset | What it measures | Coverage |
+|---|---|---|
+| **SOII Table R8** | Nonfatal injury rates by industry | 2023–2024 |
+| **CFOI Table A-1** | Fatal injury counts by industry | 2024 |
+
+Both are free, public domain, and published annually.
+
+## What is DAFW?
+
+**DAFW = Days Away From Work**
+
+- The BLS uses DAFW to measure the most serious nonfatal injuries
+- An injury counts as DAFW only if the worker had to stay home completely —
+  not just work light duty
+- Rates are reported per **10,000 full-time equivalent workers**
+- We focus on DAFW because it is the most consistent and comparable measure
+  across all industries
+
+## Overall Injury Rates
+
+Manufacturing workers get injured much more often overall.
+
+```{r echo=FALSE}
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Total DAFW Rate (per 10,000)` = c(mfg_total, fin_total, pro_total)
+) %>% kable()
+```
+
+Manufacturing is **`r round(mfg_total / fin_total, 0)`x** higher than finance
+and insurance. This is what most people would expect — factory work is
+physically demanding and carries obvious hazards.
+
+## But Falls Are a Different Story
+
+When we look at falls *specifically*, the proportion shifts.
+
+```{r echo=FALSE}
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Fall Rate` = c(mfg_falls, fin_falls, pro_falls),
+  `Falls as % of All Injuries` = paste0(
+    c(mfg_fall_share, fin_fall_share, pro_fall_share), "%")
+) %>% kable()
+```
+
+Manufacturing has more falls in absolute terms — but falls make up a much
+larger *share* of injuries in office environments.
+
+## What That Means in Practice
+
+- Out of every **100 injured manufacturing workers**, about
+  **`r mfg_fall_share`** were hurt from a fall
+- Out of every **100 injured finance workers**, about
+  **`r fin_fall_share`** were hurt from a fall
+
+In manufacturing, workers also face machinery, overexertion, and contact
+incidents. In an office, **falls are the dominant hazard** — there isn't much
+else competing with them.
+
+## Fatal Injuries: CFOI Data
+
+Does the same pattern hold for workplace deaths?
+
+```{r echo=FALSE}
+tibble(
+  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
+  `Total Deaths` = c(mfg_fatal_total, fin_fatal_total, pro_fatal_total),
+  `Deaths from Falls` = c(mfg_fatal_falls, fin_fatal_falls, pro_fatal_falls),
+  `Falls as % of Deaths` = paste0(c(mfg_fall_pct, fin_fall_pct, pro_fall_pct), "%")
+) %>% kable()
+```
+
+Yes — falls caused **`r fin_fall_pct`%** of deaths in finance and insurance,
+versus **`r mfg_fall_pct`%** in manufacturing.
+
+## Key Takeaway
+
+- Manufacturing has far higher injury rates **overall**
+- But falls make up a larger **share** of injuries in office settings —
+  in both nonfatal and fatal data
+- This is consistent across two independent datasets with different
+  methodologies
+- That consistency strengthens confidence in the finding
+
+
+## Recommendation
+
+Office safety programs should prioritize fall prevention because:
+
+- Falls are the **single most common** injury type in office environments
+- The pattern holds at every level of severity — minor injuries and deaths
+- Prevention is relatively low cost:
+  - Slip-resistant flooring and mats
+  - Clear walkway policies
+  - Basic employee awareness training
+
+## Limitations
+
+limits:
+
+- **Self-reporting:** SOII relies on employer OSHA 300 Logs — some injuries
+  may go unreported
+- **Broad categories:** NAICS 52 and 54 include workers beyond pure desk
+  roles — some do fieldwork or client visits
+- **Missing severity measure:** Median days away from work would strengthen
+  the severity comparison but was not available in these tables
+- **Different time periods:** SOII covers 2023–2024, CFOI covers 2024 only
+
+## Conclusion
+
+The original question: *are office workers at greater fall risk than
+manufacturing workers?*
+
+**The answer:**
+
+- Not in absolute terms — manufacturing is more dangerous overall
+- But falls are the **dominant hazard** in office environments in a way
+  they are not in manufacturing (holds npnfatal and fatal data)
+
+## Thats all, stay safe on the job
+
+**Data sources:**
+
+- BLS Survey of Occupational Injuries and Illnesses (SOII), 2023–2024
+- BLS Census of Fatal Occupational Injuries (CFOI), 2024

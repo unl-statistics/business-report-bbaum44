@@ -40,10 +40,24 @@ pro_fatal_total <- 65;  pro_fatal_falls <- 10
 mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
 fin_fall_pct <- round(fin_fatal_falls / fin_fatal_total * 100, 1)
 pro_fall_pct <- round(pro_fatal_falls / pro_fatal_total * 100, 1)
+
+# Fatal: CFOI 
+fatal_df <- as.data.frame(read_excel("fatal.xlsx", col_names = FALSE))
+
+mfg_fatal_total <- as.numeric(fatal_df[143, 3])
+mfg_fatal_falls <- as.numeric(fatal_df[143, 7])
+fin_fatal_total <- as.numeric(fatal_df[453, 3])
+fin_fatal_falls <- as.numeric(fatal_df[453, 7])
+pro_fatal_total <- as.numeric(fatal_df[488, 3])
+pro_fatal_falls <- as.numeric(fatal_df[488, 7])
+
+mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
+fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
+pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
 ```
 
 
-### Nonfatal Injury Rates
+# Primary Analysis: Nonfatal Injury Rates (R8)
 
 As shown in @tbl-nonfatal, manufacturing workers experienced a total nonfatal injury rate of `r mfg_total` per 10,000 FTE workers — roughly `r round(mfg_total / fin_total, 0)` times higher than the rate in finance and insurance (`r fin_total`) and `r round(mfg_total / pro_total, 1)` times higher than professional services (`r pro_total`).
 
@@ -69,9 +83,15 @@ tibble(
 
 While manufacturing workers have more falls in absolute terms, falls represent a much larger *proportion* of injuries in office sectors. As seen in @tbl-nonfatal, falls account for `r fin_fall_share`% of all nonfatal injuries in finance and insurance, and `r pro_fall_share`% in professional services — compared to just `r mfg_fall_share`% in manufacturing.
 
-This means that in office environments, falls are the dominant injury type. In manufacturing, falls are just one of many hazards competing for attention.
+::: {.callout-important}
+## Key Finding
+In office environments, falls are the dominant injury type and account for
+over a third of all nonfatal injuries. In manufacturing, falls are just one type of injury. This means fall prevention deserves more attention in office safety programs.
+:::
 
-### Fatal Injuries
+
+## Secondary Analysis: Fatal Injuries (CFOI)
+
 
 @tbl-fatal shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had `r mfg_fatal_total` workplace deaths, with `r mfg_fatal_falls` (`r mfg_fall_pct`%) caused by falls. Finance and insurance had `r fin_fatal_total` total deaths, with `r fin_fatal_falls` (`r fin_fall_pct`%) from falls. Professional services had `r pro_fatal_total` deaths, with `r pro_fatal_falls` (`r pro_fall_pct`%) from falls.
 
@@ -95,7 +115,7 @@ tibble(
 
 The pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.
 
-### Summary of Key Comparisons
+## Summary of Key Comparisons
 
 @tbl-summary provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.
 
@@ -119,3 +139,10 @@ tibble(
 ) |>
   kable()
 ```
+
+::: {.callout-note}
+## Consistency Across Sources
+The fall share is higher in office sectors than in manufacturing in both the
+nonfatal data (R8) and the fatal data (CFOI). This consistency across two
+independent datasets.
+:::
