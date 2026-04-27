@@ -216,7 +216,7 @@ manufacturing workers?*
 
 - Not in absolute terms — manufacturing is more dangerous overall
 - But falls are the **dominant hazard** in office environments in a way
-  they are not in manufacturing (holds npnfatal and fatal data)
+  they are not in manufacturing (holds for nonfatal and fatal data)
 
 ## Thats all, stay safe on the job
 
