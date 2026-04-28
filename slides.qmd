@@ -144,7 +144,7 @@ tibble(
 ) %>% kable()
 ```
 
-Manufacturing has more falls in absolute terms — but falls make up a much
+Manufacturing has more falls in absolute terms — but falls make up a
 larger *share* of injuries in office environments.
 
 ## What That Means in Practice
@@ -155,7 +155,7 @@ larger *share* of injuries in office environments.
   **`r fin_fall_share`** were hurt from a fall
 
 In manufacturing, workers also face machinery, overexertion, and contact
-incidents. In an office, **falls are the dominant hazard** — there isn't much
+incidents. In an office, **falls are the more dominant hazard** — there isn't much
 else competing with them.
 
 ## Fatal Injuries: CFOI Data
@@ -216,7 +216,7 @@ manufacturing workers?*
 
 - Not in absolute terms — manufacturing is more dangerous overall
 - But falls are the **dominant hazard** in office environments in a way
-  they are not in manufacturing (holds npnfatal and fatal data)
+  they are not in manufacturing (holds for nonfatal and fatal data)
 
 ## Thats all, stay safe on the job
 
