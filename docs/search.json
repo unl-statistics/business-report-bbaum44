@@ -1,0 +1,182 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Workplace Injury Risk: Office Workers vs. Manufacturing Workers",
+    "section": "",
+    "text": "1 Executive Summary\nThis report compares workplace injury risk between manufacturing workers and office-sector workers using 2023–2024 federal data from the U.S. Bureau of Labor Statistics. Two datasets are used: the Survey of Occupational Injuries and Illnesses (SOII, Table R8) for nonfatal injuries, and the Census of Fatal Occupational Injuries (CFOI) for workplace deaths.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#key-findings",
+    "href": "index.html#key-findings",
+    "title": "Workplace Injury Risk: Office Workers vs. Manufacturing Workers",
+    "section": "1.1 Key Findings",
+    "text": "1.1 Key Findings\n\nManufacturing workers are injured far more often overall. The nonfatal injury rate in manufacturing is 86.4 per 10,000 workers — 8 times higher than in finance and insurance (11).\nFalls dominate in office environments. Falls account for 33.6% of all nonfatal injuries in finance and insurance, compared to just 21.6% in manufacturing. When an office worker is injured, it is most likely from a fall.\nThe fatal data confirms the pattern. Falls caused 33.3% of deaths in finance and insurance versus 14.7% in manufacturing — consistent across both nonfatal and fatal measures.\n\n\n\n\n\n\n\nImportantRecommendation\n\n\n\nSafety officers in office environments should treat fall prevention as a top priority even though overall injury counts appear low. Targeted measures such as slip-resistant flooring, clear walkway policies, and employee awareness programs can meaningfully reduce this risk.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Executive Summary</span>"
+    ]
+  },
+  {
+    "objectID": "01-intro.html",
+    "href": "01-intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "2.1 Scope\nEvery year, millions of American workers experience occupational injuries that keep them away from work. These injuries produce substantial costs for both the employer and employee. Understanding where these injuries occur and why injuries happen is the first step toward preventing them.\nA common assumption in workplace safety is that physically demanding industries like manufacturing are dangerous while office environments are relatively safe, and when it comes to overall injury rates, this assumption holds broadly correct.Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors, while office workers spend most of theirtime in controlled environments with few obvious physical hazards.\nBut one specific hazard tells a more complicated story: falls. Slippery floors, cluttered walkways, and everyday movement in office settings can lead to falls that cause serious injuries. Understanding how fall risk compares across sectors matters for safety officers who need to allocate resources effectively.\nThis report addresses the question: Are office workers at greater risk of falls than manufacturing workers, and how do injuries compare in severity? To answer this, we use two federal datasets from the Bureau of Labor Statistics (BLS) that together cover the full spectrum of workplace injury, from minor incidents requiring days off work to fatal injuries.\nThis analysis focuses on three industry sectors:\nNonfatal injury data comes from the SOII (Table R8). Fatal injury data comes from the CFOI (Table A-1). Together these two sources cover the full severity spectrum from serious nonfatal injuries to workplace deaths.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "01-intro.html#scope",
+    "href": "01-intro.html#scope",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "Manufacturing (NAICS 31–33): Representing industries with heavy physical labor and industrial hazards.\nFinance and Insurance (NAICS 52): A representative office-based sector\nProfessional, Scientific, and Technical Services (NAICS 54): A second broder range of office-workers\n\n\n\n\n\n\n\n\nTipWhy Two Data Sources?\n\n\n\nThe SOII measures nonfatal injuries only. The CFOI measures fatal injuries only. Using both together allows us to compare fall risk across the full severity spectrum.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html",
+    "href": "02-data.html",
+    "title": "3  Data",
+    "section": "",
+    "text": "3.1 Data Source 1: SOII Table R8 — Nonfatal Injuries by Industry\nThe Survey of Occupational Injuries and Illnesses (SOII) is published annually by the BLS, as required by the Occupational Safety and Health Act of 1970 (Bureau of Labor Statistics, n.d.-b). It surveys approximately 200,000 employers and reports injury rates per 10,000 full-time equivalent (FTE) workers. The most recent release covers 2023–2024 (Bureau of Labor Statistics 2026b).\nFor this report, we used Table R8, which breaks down nonfatal injury rates by industry and event type (including falls, slips, and trips). We focused on Days Away From Work (DAFW) rates, which capture injuries serious enough to keep workers out of work.\nWhat it contains: Annualized nonfatal injury and illness rates per 10,000 full-time equivalent (FTE) workers, broken down by industry (NAICS code) and event type. Key event types include falls/slips/trips, contact incidents, overexertion, and transportation incidents. Three case types are reported per industry: DAFW (Days Away From Work), DJTR (Days of Job Transfer or Restriction), and DART (the combined measure) (Bureau of Labor Statistics 2026b).\nWhat we use: Total DAFW rates and fall-specific DAFW rates for manufacturing (NAICS 31–33), finance and insurance (NAICS 52), and professional services (NAICS 54). This forms the basis of the primary analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html#data-source-1-soii-table-r8-nonfatal-injuries-by-industry",
+    "href": "02-data.html#data-source-1-soii-table-r8-nonfatal-injuries-by-industry",
+    "title": "3  Data",
+    "section": "",
+    "text": "WarningKnown Limitation\n\n\n\nThe SOII relies on employer self-reporting via the OSHA 300 Log. Injuries may be undercounted if workers face pressure not to report based on severity or other reasons. This could also be attributed to weak record-keeping practices. This limitation applies across all sectors.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html#data-source-2-cfoi-table-a-1-fatal-injuries-by-industry",
+    "href": "02-data.html#data-source-2-cfoi-table-a-1-fatal-injuries-by-industry",
+    "title": "3  Data",
+    "section": "3.2 Data Source 2: CFOI Table A-1 — Fatal Injuries by Industry",
+    "text": "3.2 Data Source 2: CFOI Table A-1 — Fatal Injuries by Industry\nThe Census of Fatal Occupational Injuries (CFOI) is an annual count of every workplace death in the United States (Bureau of Labor Statistics, n.d.-a). We used Table A-1, which reports fatal injury counts by industry and event type, including falls.\nWhat it contains: A complete census of all fatal workplace injuries in the U.S. in 2024, broken down by industry (NAICS code) and event type, including falls, slips, and trips. Unlike the SOII, which is a sample survey, the CFOI verifies every case using at least two independent source documents: death certificates, OSHA reports, workers’ compensation records, and news reports (Bureau of Labor Statistics 2026a).\nWhat we use: Total fatal injury counts and fatal fall counts for manufacturing, finance and insurance, and professional services. This forms the basis of the secondary/severity analysis.\n\n\n\n\n\n\nNoteSOII vs CFOI: Key Difference\n\n\n\nThe SOII is a sample survey: it estimates injury rates from a sample of employers. The CFOI is a census: it counts every single fatal workplace injury and verifies it independently. This makes the CFOI more definitive for fatal outcomes, but it also means the two sources are not directly comparable in their methodology.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "02-data.html#compared",
+    "href": "02-data.html#compared",
+    "title": "3  Data",
+    "section": "3.3 Compared",
+    "text": "3.3 Compared\n\n\n\n\n\n\n\n\n\n\nVariable\nSource\nDescription\nUnits\nMissing\n\n\n\n\ntotal_rate\nR8\nTotal DAFW injury rate\nPer 10,000 FTE workers\n— (suppressed)\n\n\nfall_rate\nR8\nFalls, slips, trips DAFW rate\nPer 10,000 FTE workers\n— (suppressed)\n\n\nfall_share\nCalculated\nFalls as % of total nonfatal injuries\nPercent\n—\n\n\nfatal_total\nCFOI\nTotal fatal injuries\nCount\n— (suppressed)\n\n\nfatal_falls\nCFOI\nFatal falls, slips, trips\nCount\n— (suppressed)\n\n\nfatal_fall_pct\nCalculated\nFatal falls as % of total deaths\nPercent\n—\n\n\nnaics\nR8\nIndustry classification code\nNAICS code\n—\n\n\ncase_type\nR8\nDAFW, DJTR, or DART\nCategorical\n—\n\n\n\n\n\n\n\nBureau of Labor Statistics. 2026a. Census of Fatal Occupational Injuries Summary, 2024. Https://www.bls.gov/news.release/cfoi.nr0.htm.\n\n\nBureau of Labor Statistics. 2026b. Employer-Reported Workplace Injuries and Illnesses, 2023–2024. Https://www.bls.gov/news.release/osh.nr0.htm.\n\n\nBureau of Labor Statistics. n.d.-a. Census of Fatal Occupational Injuries (CFOI) — Current and Revised Data. Https://www.bls.gov/iif/fatal-injuries-tables.htm.\n\n\nBureau of Labor Statistics. n.d.-b. Survey of Occupational Injuries and Illnesses Data. Https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "03-methods.html",
+    "href": "03-methods.html",
+    "title": "4  Methods",
+    "section": "",
+    "text": "4.1 Loading the Data\nThis section explains how the raw BLS files were loaded, cleaned, and used to produce the results. Every code step is explained so the analysis is fully reproducible.\nThe Excel files are formatted to read, not for R. They contain descriptive title rows, multi-row column headers, and footnote markers embedded in cell values. To handle this, we load each file with col_names = FALSE, which prevents R from treating row 1 as column headers and instead assigns generic names (...1, ...2, etc.) that we rename manually.\nlibrary(readxl)\nlibrary(tidyverse)\n\n# col_names = FALSE prevents R from using row 1 as headers.\n# The BLS files have a title row and a label row before data begins,\n# so letting R guess headers would break everything.\nr8    &lt;- read_excel(\n  \"case-and-demographic-characteristics-table-r8-2023-2024.xlsx\",\n  col_names = FALSE)\n\nfatal &lt;- read_excel(\"fatal.xlsx\", col_names = FALSE)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "03-methods.html#cleaning-r8",
+    "href": "03-methods.html#cleaning-r8",
+    "title": "4  Methods",
+    "section": "4.2 Cleaning R8",
+    "text": "4.2 Cleaning R8\nAfter loading, we drop the first two rows (the title and label rows) and rename only the four columns we actually use. There are 23 columns in the file and we ignore the rest.\n\n# Drop the two header rows so data starts at row 1\nr8_data &lt;- r8[-c(1, 2), ]\n\n# Rename only the columns we use.\n# Column positions identified by inspecting the raw file:\n#   col 1  = industry name\n#   col 2  = NAICS code\n#   col 3  = case type (DAFW, DART, or DJTR)\n#   col 4  = total injury rate per 10,000 FTE workers\n#   col 10 = falls, slips, trips rate per 10,000 FTE workers\nnames(r8_data)[1]  &lt;- \"industry\"\nnames(r8_data)[2]  &lt;- \"naics\"\nnames(r8_data)[3]  &lt;- \"case_type\"\nnames(r8_data)[4]  &lt;- \"total_rate\"\nnames(r8_data)[10] &lt;- \"fall_rate\"",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "03-methods.html#filtering-to-target-sectors",
+    "href": "03-methods.html#filtering-to-target-sectors",
+    "title": "4  Methods",
+    "section": "4.3 Filtering to Target Sectors",
+    "text": "4.3 Filtering to Target Sectors\nInjury rates for three sectors were extracted from the SOII Table R8 using NAICS codes: manufacturing (31–33), finance and insurance (52), and professional, scientific, and technical services (54). Finance and insurance and professional services were selected as the most representative office-type sectors.\nFor each sector, the following are recorded:\n\nTotal DAFW rate — overall nonfatal injury rate per 10,000 FTE workers\nFall-specific DAFW rate — nonfatal fall injuries per 10,000 FTE workers\nFall share of total injuries — falls as a percentage of all nonfatal injuries\n\nDAFW (Days Away From Work) was chosen because it captures the most serious nonfatal injuries (those severe enough to keep a worker completely away from work).\n\n# Filter to top-level NAICS sectors, DAFW case type only.\n# Using the broadest NAICS code (e.g. \"31-33\" not \"311\") ensures we get\n# the full sector average rather than a sub-industry figure.\nmfg &lt;- r8_data %&gt;% filter(naics == \"31-33\", case_type == \"DAFW\")\nfin &lt;- r8_data %&gt;% filter(naics == \"52\",    case_type == \"DAFW\")\npro &lt;- r8_data %&gt;% filter(naics == \"54\",    case_type == \"DAFW\")\n\n# as.numeric() converts from character type (a side effect of col_names = FALSE).\n# Suppressed cells shown as \"-\" in the BLS table will become NA here.\nmfg_total &lt;- as.numeric(mfg$total_rate[1])\nmfg_falls &lt;- as.numeric(mfg$fall_rate[1])\nfin_total  &lt;- as.numeric(fin$total_rate[1])\nfin_falls  &lt;- as.numeric(fin$fall_rate[1])\npro_total  &lt;- as.numeric(pro$total_rate[1])\npro_falls  &lt;- as.numeric(pro$fall_rate[1])\n\n# Derived measure: falls as a percentage of all nonfatal injuries per sector\nmfg_fall_share &lt;- round(mfg_falls / mfg_total * 100, 1)\nfin_fall_share  &lt;- round(fin_falls  / fin_total  * 100, 1)\npro_fall_share  &lt;- round(pro_falls  / pro_total  * 100, 1)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "03-methods.html#extracting-fatal-data",
+    "href": "03-methods.html#extracting-fatal-data",
+    "title": "4  Methods",
+    "section": "4.4 Extracting Fatal Data",
+    "text": "4.4 Extracting Fatal Data\nThe CFOI file has a different structure from R8. Rather than filtering by a code column, we extract rows by their verified position in the file, identified by inspecting the raw data directly. Column 3 contains total fatal injuries; column 7 contains fatal falls, slips, and trips.\n\n# Convert to data frame for row-based indexing\nfatal_df &lt;- as.data.frame(fatal)\n\n# Row positions verified from raw file inspection:\n# Row 143 = Manufacturing (NAICS 31-33)\n# Row 453 = Finance and insurance (NAICS 52)\n# Row 488 = Professional, scientific, and technical services (NAICS 54)\nmfg_fatal_total &lt;- as.numeric(fatal_df[143, 3])\nmfg_fatal_falls &lt;- as.numeric(fatal_df[143, 7])\nfin_fatal_total &lt;- as.numeric(fatal_df[453, 3])\nfin_fatal_falls &lt;- as.numeric(fatal_df[453, 7])\npro_fatal_total &lt;- as.numeric(fatal_df[488, 3])\npro_fatal_falls &lt;- as.numeric(fatal_df[488, 7])\n\n#Fatal injury counts were taken directly from CFOI Table A-1. Fall share of deaths are calculated by dividing fatal falls by total sector deaths.\nmfg_fall_pct &lt;- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)\nfin_fall_pct  &lt;- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)\npro_fall_pct  &lt;- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)\n\nNo statistical tests were conducted. Both the SOII and CFOI represent population-level estimates, so the observed differences between sectors reflect real differences rather than sampling error.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html",
+    "href": "04-results.html",
+    "title": "5  Results",
+    "section": "",
+    "text": "6 Primary Analysis: Nonfatal Injury Rates (R8)\nAs shown in Table 6.1, manufacturing workers experienced a total nonfatal injury rate of 86.4 per 10,000 FTE workers — roughly 8 times higher than the rate in finance and insurance (11) and 4.6 times higher than professional services (18.6).\nTable 6.1: Nonfatal injury rates per 10,000 FTE workers by sector (SOII, 2023–2024)\n\n\n\n\n\n\nSector\nTotal Rate\nFall Rate\nFalls as % of Total\n\n\n\n\nManufacturing\n86.4\n18.7\n21.6%\n\n\nFinance & Insurance\n11.0\n3.7\n33.6%\n\n\nProfessional Services\n18.6\n4.3\n23.1%",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html#secondary-analysis-fatal-injuries-cfoi",
+    "href": "04-results.html#secondary-analysis-fatal-injuries-cfoi",
+    "title": "5  Results",
+    "section": "6.1 Secondary Analysis: Fatal Injuries (CFOI)",
+    "text": "6.1 Secondary Analysis: Fatal Injuries (CFOI)\nTable 6.2 shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had 353 workplace deaths, with 52 (14.7%) caused by falls. Finance and insurance had 18 total deaths, with 6 (33.3%) from falls. Professional services had 65 deaths, with 10 (15.4%) from falls.\n\n\n\n\nTable 6.2: Fatal occupational injuries by sector (CFOI, 2024)\n\n\n\n\n\n\n\n\n\n\n\n\nSector\nTotal Deaths\nDeaths from Falls\nFalls as % of Deaths\n\n\n\n\nManufacturing\n353\n52\n14.7%\n\n\nFinance & Insurance\n18\n6\n33.3%\n\n\nProfessional Services\n65\n10\n15.4%\n\n\n\n\n\n\n\n\nThe pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html#summary-of-key-comparisons",
+    "href": "04-results.html#summary-of-key-comparisons",
+    "title": "5  Results",
+    "section": "6.2 Summary of Key Comparisons",
+    "text": "6.2 Summary of Key Comparisons\nTable 6.3 provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.\n\n\n\n\nTable 6.3: Falls as a share of total injuries — nonfatal and fatal comparison\n\n\n\n\n\n\n\n\n\n\n\nSector\nFalls: % of Nonfatal Injuries\nFalls: % of Deaths\n\n\n\n\nManufacturing\n21.6%\n14.7%\n\n\nFinance & Insurance\n33.6%\n33.3%\n\n\nProfessional Services\n23.1%\n15.4%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteConsistency Across Sources\n\n\n\nThe fall share is higher in office sectors than in manufacturing in both the nonfatal data (R8) and the fatal data (CFOI). This consistency across two independent datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "05-conclusion.html",
+    "href": "05-conclusion.html",
+    "title": "6  Conclusion",
+    "section": "",
+    "text": "6.1 Summary of Findings\nThis report examined whether office workers face greater fall risk than manufacturing workers using two independent federal datasets.\nThis report looked at the workplace injury risk across manufacturing and office sectors using both BLS nonfatal and fatal injury data. The findings confirm that manufacturing workers face much higher injury rates overall, but that falls are disproportionately common in office environments.\nThe nonfatal injury data showed that falls account for 33.6% of all injuries in finance and insurance, compared to just 21.6% in manufacturing. The fatal injury data showed the same pattern: falls caused 33.3% of deaths in finance and insurance versus 14.7% in manufacturing. The CFOI fatal data confirmed this pattern: falls caused 33.3% of deaths in finance and insurance versus 14.7% in manufacturing.\nThese results suggest clear and practical next steps: safety officers in office settings should treat fall prevention as a top priority. Even though overall injury numbers are low, when office workers do get hurt, it is most likely from a fall. Simple changes such as slip-resistant flooring, clear walkways, proper lighting, and employee awareness programs can help to reduce this risk.\nThere are some limitations to note. The SOII relies on employer self-reporting, which may undercount injuries in workplaces with weaker safety cultures. Broad NAICS categories also include a wide range of job types, so rates may not perfectly represent desk-based workers specifically. Median days away from work (a useful measure of injury severity) was not available in the tables used here and would strengthen future analyses.\nOverall, the data shows a clear case for workplace safety, recognizing fall risk as a significant concern even in low-injury office environments.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "05-conclusion.html#summary-of-findings",
+    "href": "05-conclusion.html#summary-of-findings",
+    "title": "6  Conclusion",
+    "section": "",
+    "text": "ImportantExecutive Takeaway\n\n\n\nOffice workers are not at greater absolute fall risk than manufacturing workers. But falls are a disproportionately large share of the injuries office workers do experience in both nonfatal and fatal outcomes.Fall prevention must be treated as a greater threat in office scenarios.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Bureau of Labor Statistics. 2026a. Census of Fatal Occupational\nInjuries Summary, 2024.\nHttps://www.bls.gov/news.release/cfoi.nr0.htm.\n\n\nBureau of Labor Statistics. 2026b. Employer-Reported Workplace\nInjuries and Illnesses, 2023–2024.\nHttps://www.bls.gov/news.release/osh.nr0.htm.\n\n\nBureau of Labor Statistics. n.d.-a. Census of Fatal Occupational\nInjuries (CFOI) — Current and Revised Data.\nHttps://www.bls.gov/iif/fatal-injuries-tables.htm.\n\n\nBureau of Labor Statistics. n.d.-b. Survey of Occupational Injuries\nand Illnesses Data.\nHttps://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables.htm.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

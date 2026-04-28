@@ -2,6 +2,10 @@ project:
   type: book  
   output-dir: docs
 
+profiles:
+  windows:
+    post-render: compile-slides.bat
+
 book:
   title: "Workplace Injury Risk: Office Workers vs. Manufacturing Workers"
   author: "Brynn"
