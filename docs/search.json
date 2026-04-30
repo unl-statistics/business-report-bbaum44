@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "04-results.html",
+    "href": "04-results.html",
+    "title": "5  Results",
+    "section": "",
+    "text": "6 Primary Analysis: Nonfatal Injury Rates (R8)\nAs shown in Table 6.1, manufacturing workers experienced a total nonfatal injury rate of 86.4 per 10,000 FTE workers — roughly 8 times higher than the rate in finance and insurance (11) and 4.6 times higher than professional services (18.6).\nTable 6.1: Nonfatal injury rates per 10,000 FTE workers by sector (SOII, 2023–2024)\n\n\n\n\n\n\nSector\nTotal Rate\nFall Rate\nFalls as % of Total\n\n\n\n\nManufacturing\n86.4\n18.7\n21.6%\n\n\nFinance & Insurance\n11.0\n3.7\n33.6%\n\n\nProfessional Services\n18.6\n4.3\n23.1%",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html#secondary-analysis-fatal-injuries-cfoi",
+    "href": "04-results.html#secondary-analysis-fatal-injuries-cfoi",
+    "title": "5  Results",
+    "section": "6.1 Secondary Analysis: Fatal Injuries (CFOI)",
+    "text": "6.1 Secondary Analysis: Fatal Injuries (CFOI)\nTable 6.2 shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had 353 workplace deaths, with 52 (14.7%) caused by falls. Finance and insurance had 18 total deaths, with 6 (33.3%) from falls. Professional services had 65 deaths, with 10 (15.4%) from falls.\n\n\n\n\nTable 6.2: Fatal occupational injuries by sector (CFOI, 2024)\n\n\n\n\n\n\n\n\n\n\n\n\nSector\nTotal Deaths\nDeaths from Falls\nFalls as % of Deaths\n\n\n\n\nManufacturing\n353\n52\n14.7%\n\n\nFinance & Insurance\n18\n6\n33.3%\n\n\nProfessional Services\n65\n10\n15.4%\n\n\n\n\n\n\n\n\nThe pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "04-results.html#summary-of-key-comparisons",
+    "href": "04-results.html#summary-of-key-comparisons",
+    "title": "5  Results",
+    "section": "6.2 Summary of Key Comparisons",
+    "text": "6.2 Summary of Key Comparisons\nTable 6.3 provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.\n\n\n\n\nTable 6.3: Falls as a share of total injuries — nonfatal and fatal comparison\n\n\n\n\n\n\n\n\n\n\n\nSector\nFalls: % of Nonfatal Injuries\nFalls: % of Deaths\n\n\n\n\nManufacturing\n21.6%\n14.7%\n\n\nFinance & Insurance\n33.6%\n33.3%\n\n\nProfessional Services\n23.1%\n15.4%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsistency Across Sources\n\n\n\nThe fall share is higher in office sectors than in manufacturing in both the nonfatal data (R8) and the fatal data (CFOI). This consistency across two independent datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Results</span>"
+    ]
+  }
+]
