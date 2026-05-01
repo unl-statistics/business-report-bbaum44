@@ -57,7 +57,7 @@ pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
 ```
 
 
-# Primary Analysis: Nonfatal Injury Rates (R8)
+## Primary Analysis: Nonfatal Injury Rates (R8)
 
 As shown in @tbl-nonfatal, manufacturing workers experienced a total nonfatal injury rate of `r mfg_total` per 10,000 FTE workers — roughly `r round(mfg_total / fin_total, 0)` times higher than the rate in finance and insurance (`r fin_total`) and `r round(mfg_total / pro_total, 1)` times higher than professional services (`r pro_total`).
 
@@ -89,13 +89,50 @@ In office environments, falls are the dominant injury type and account for
 over a third of all nonfatal injuries. In manufacturing, falls are just one type of injury. This means fall prevention deserves more attention in office safety programs.
 :::
 
+```{r,warning=FALSE}
+#| label: fig-pictogram
+#| fig-cap: "Each square represents 1 out of a 100 injured workers. Red squares were injured in a fall."
+#| echo: false
+
+library(ggplot2)
+
+pictogram <- function(fall_share, title) {
+  df <- expand.grid(x = 1:10, y = 1:10)
+  df$fill <- c(
+    rep("Fall injury", round(fall_share)),
+    rep("Other", 100 - round(fall_share))
+  )
+  
+  ggplot(df, aes(x = x, y = y, fill = fill)) +
+    geom_tile(color = "white", size = 0.5) +
+    scale_fill_manual(
+      values = c("Fall injury" = "red", "Other" = "lightblue"),
+      name = NULL
+    ) +
+    labs(title = title) +
+    theme_void() +
+    theme(
+      legend.position = "bottom"
+    )
+}
+
+p1 <- pictogram(mfg_fall_share, 
+                     paste0("Manufacturing ", mfg_fall_share,"%"))
+p2 <- pictogram(fin_fall_share, 
+                     paste0("Finance & Insurance ", fin_fall_share, "%"))
+p3 <- pictogram(pro_fall_share, 
+                     paste0("Professional Services ", pro_fall_share, "%"))
+
+library(patchwork)
+p1 + p2 + p3
+```
 
 ## Secondary Analysis: Fatal Injuries (CFOI)
 
 
 @tbl-fatal shows fatal injury counts and fall-related deaths by sector in 2024. Manufacturing had `r mfg_fatal_total` workplace deaths, with `r mfg_fatal_falls` (`r mfg_fall_pct`%) caused by falls. Finance and insurance had `r fin_fatal_total` total deaths, with `r fin_fatal_falls` (`r fin_fall_pct`%) from falls. Professional services had `r pro_fatal_total` deaths, with `r pro_fatal_falls` (`r pro_fall_pct`%) from falls.
 
-```{r}
+```{r, warning=FALSE}
 #| label: tbl-fatal
 #| tbl-cap: "Fatal occupational injuries by sector (CFOI, 2024)"
 #| echo: false
@@ -113,36 +150,19 @@ tibble(
   kable()
 ```
 
-The pattern is consistent across both nonfatal and fatal data: falls are proportionally far more significant in office sectors than in manufacturing.
-
-## Summary of Key Comparisons
-
-@tbl-summary provides a side-by-side comparison of the fall share of injuries across both nonfatal and fatal measures.
-
-```{r}
-#| label: tbl-summary
-#| tbl-cap: "Falls as a share of total injuries — nonfatal and fatal comparison"
-#| echo: false
-
-tibble(
-  Sector = c("Manufacturing", "Finance & Insurance", "Professional Services"),
-  `Falls: % of Nonfatal Injuries` = c(
-    paste0(mfg_fall_share, "%"),
-    paste0(fin_fall_share, "%"),
-    paste0(pro_fall_share, "%")
-  ),
-  `Falls: % of Deaths` = c(
-    paste0(mfg_fall_pct, "%"),
-    paste0(fin_fall_pct, "%"),
-    paste0(pro_fall_pct, "%")
-  )
-) |>
-  kable()
-```
+The pattern is consistent across both nonfatal and fatal data: falls are proportionally more significant in office sectors than in manufacturing.
 
 ::: {.callout-note}
-## Consistency Across Sources
-The fall share is higher in office sectors than in manufacturing in both the
-nonfatal data (R8) and the fatal data (CFOI). This consistency across two
-independent datasets.
+### Summary Across Both Datasets
+
+| Sector | Falls % of Nonfatal | Falls % of Deaths |
+|---|---|---|
+| Manufacturing | `r mfg_fall_share`% | `r mfg_fall_pct`% |
+| Finance & Insurance | `r fin_fall_share`% | `r fin_fall_pct`% |
+| Professional Services | `r pro_fall_share`% | `r pro_fall_pct`% |
+
+Falls are proportionally more prevelant in office sectors across both datasets.
+
 :::
+
+

@@ -85,15 +85,17 @@ in their methodology.
 :::
 
 
-## Compared
+## Data Variables
+
+All variables used for this analysis are documented below. Supresses values are indicative that there are not enough cases for a value to be recorded.
 
 | Variable | Source | Description | Units | Missing |
 |---|---|---|---|---|
-| `total_rate` | R8 | Total DAFW injury rate | Per 10,000 FTE workers | — (suppressed) |
-| `fall_rate` | R8 | Falls, slips, trips DAFW rate | Per 10,000 FTE workers | — (suppressed) |
+| `total_rate` | R8 | Total DAFW injury rate | Per 10,000 FTE workers | — (suppressed if too few cases) |
+| `fall_rate` | R8 | Falls, slips, trips DAFW rate | Per 10,000 FTE workers | — (suppressed if too few cases) |
 | `fall_share` | Calculated | Falls as % of total nonfatal injuries | Percent | — |
-| `fatal_total` | CFOI | Total fatal injuries | Count | — (suppressed) |
-| `fatal_falls` | CFOI | Fatal falls, slips, trips | Count | — (suppressed) |
+| `fatal_total` | CFOI | Total fatal injuries | Count | — (suppressed if two few cases) |
+| `fatal_falls` | CFOI | Fatal falls, slips, trips | Count | — (suppressed if too few cases) |
 | `fatal_fall_pct` | Calculated | Fatal falls as % of total deaths | Percent | — |
 | `naics` | R8 | Industry classification code | NAICS code | — |
 | `case_type` | R8 | DAFW, DJTR, or DART | Categorical | — |

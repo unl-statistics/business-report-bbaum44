@@ -43,7 +43,7 @@ There are some limitations to note. The SOII relies on employer self-reporting, 
 Overall, the data shows a clear case for workplace safety,  recognizing fall risk as a significant concern even in low-injury office environments.
 
 ::: {.callout-important}
-## Executive Takeaway
+# Executive Takeaway
 Office workers are not at greater *absolute* fall risk than manufacturing
 workers. But falls are a disproportionately large share of the injuries office
 workers do experience in both nonfatal and fatal outcomes.Fall prevention must be treated as a greater threat in office scenarios.

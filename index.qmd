@@ -1,7 +1,4 @@
-
----
-title: "Executive Summary"
----
+# Executive Summary
 
 ```{r index-setup, include=FALSE}
 library(readxl)
@@ -83,3 +80,6 @@ manufacturing workers, and how does injury severity compare?
 Safety officers in office environments should treat fall prevention as a top
 priority even though overall injury counts appear low. Targeted measures such as 
 slip-resistant flooring, clear walkway policies, and employee awareness programs can meaningfully reduce this risk.
+:::
+
+<!-- Added bottom ::: to close the callout -->

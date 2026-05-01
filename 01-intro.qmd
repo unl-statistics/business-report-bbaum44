@@ -6,7 +6,7 @@ Every year, millions of American workers experience occupational injuries that
 keep them away from work. These injuries produce substantial costs for both the employer and employee. Understanding where these injuries occur and why injuries happen is the first step toward preventing them.
 
 A common assumption in workplace safety is that physically demanding industries
-like manufacturing are dangerous while office environments are relatively safe, and when it comes to overall injury rates, this assumption holds broadly correct.Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors, while office workers spend most of theirtime in controlled environments with few obvious physical hazards.
+like manufacturing are dangerous while office environments are relatively safe, and when it comes to overall injury rates, this assumption holds broadly correct. Manufacturing involves heavy machinery, physical labor, and industrial hazards that drive injury rates well above most other sectors, while office workers spend most of theirtime in controlled environments with few obvious physical hazards.
 
 But one specific hazard tells a more complicated story: falls. Slippery floors, cluttered walkways, and everyday movement in office settings can lead to falls that cause serious injuries. Understanding how fall risk compares across sectors matters for safety officers who need to allocate resources effectively.
 

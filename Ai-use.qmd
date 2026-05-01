@@ -9,13 +9,12 @@ Model: Chat GPT Plus
 
 Prompt: "Can you add comments to this code that would be considered professional and appropriate for a "business report" here is the code, just add comments:
 
-```{r methods-setup, include=FALSE}
+##Input
+
 library(readxl)
 library(tidyverse)
 library(knitr)
-```
 
-```{r load, eval=FALSE}
 library(readxl)
 library(tidyverse)
 
@@ -25,9 +24,7 @@ r8    <- read_excel(
   col_names = FALSE)
 
 fatal <- read_excel("fatal.xlsx", col_names = FALSE)
-```
 
-```{r clean-r8, eval=FALSE}
 
 r8_data <- r8[-c(1, 2), ]
 
@@ -37,9 +34,7 @@ names(r8_data)[2]  <- "naics"
 names(r8_data)[3]  <- "case_type"
 names(r8_data)[4]  <- "total_rate"
 names(r8_data)[10] <- "fall_rate"
-```
 
-```{r filter-r8, eval=FALSE}
 
 mfg <- r8_data %>% filter(naics == "31-33", case_type == "DAFW")
 fin <- r8_data %>% filter(naics == "52",    case_type == "DAFW")
@@ -57,9 +52,9 @@ pro_falls  <- as.numeric(pro$fall_rate[1])
 mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
 fin_fall_share  <- round(fin_falls  / fin_total  * 100, 1)
 pro_fall_share  <- round(pro_falls  / pro_total  * 100, 1)
-```
 
-```{r clean-fatal, eval=FALSE}
+
+
 
 fatal_df <- as.data.frame(fatal)
 
@@ -74,9 +69,8 @@ pro_fatal_falls <- as.numeric(fatal_df[488, 7])
 mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
 fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
 pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
-```
 
-```{r clean-r8, eval=FALSE}
+
 
 r8_data <- r8[-c(1, 2), ]
 
@@ -86,9 +80,7 @@ names(r8_data)[2]  <- "naics"
 names(r8_data)[3]  <- "case_type"
 names(r8_data)[4]  <- "total_rate"
 names(r8_data)[10] <- "fall_rate"
-```
 
-```{r filter-r8, eval=FALSE}
 
 mfg <- r8_data %>% filter(naics == "31-33", case_type == "DAFW")
 fin <- r8_data %>% filter(naics == "52",    case_type == "DAFW")
@@ -106,9 +98,7 @@ pro_falls  <- as.numeric(pro$fall_rate[1])
 mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
 fin_fall_share  <- round(fin_falls  / fin_total  * 100, 1)
 pro_fall_share  <- round(pro_falls  / pro_total  * 100, 1)
-```
 
-```{r clean-fatal, eval=FALSE}
 
 fatal_df <- as.data.frame(fatal)
 
@@ -124,20 +114,19 @@ pro_fatal_falls <- as.numeric(fatal_df[488, 7])
 mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
 fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
 pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
-```
 
 
 
-Output:
+##Output:
 
-```{r}
+
 library(readxl)
 library(tidyverse)
 
-# Ingest SOII Table R8 and CFOI datasets as raw, unstructured tables.
-# col_names = FALSE enforces positional indexing by preventing implicit header parsing,
-# which would otherwise mis-specify variable names due to multi-line headers and metadata rows.
-# All columns are therefore imported as unnamed character vectors for controlled post-processing.
+ Ingest SOII Table R8 and CFOI datasets as raw, unstructured tables.
+ col_names = FALSE enforces positional indexing by preventing implicit header parsing,
+ which would otherwise mis-specify variable names due to multi-line headers and metadata rows.
+ All columns are therefore imported as unnamed character vectors for controlled post-processing.
 r8 <- read_excel(
   "case-and-demographic-characteristics-table-r8-2023-2024.xlsx",
   col_names = FALSE
@@ -147,29 +136,31 @@ fatal <- read_excel(
   "fatal.xlsx",
   col_names = FALSE
 )
-# Remove leading non-data rows (metadata + header rows) to align row indices
-# with observational units; ensures row 1 corresponds to the first valid record
+ Remove leading non-data rows (metadata + header rows) to align row indices
+ with observational units; ensures row 1 corresponds to the first valid record
 r8_data <- r8[-c(1, 2), ]
 
-# Perform partial schema definition via positional column renaming.
-# Column indices are fixed based on deterministic structure of the source file.
-# Only analytically relevant variables are materialized; remaining columns are ignored.
+ Perform partial schema definition via positional column renaming.
+ Column indices are fixed based on deterministic structure of the source file.
+ Only analytically relevant variables are materialized; remaining columns are ignored.
 names(r8_data)[1]  <- "industry"     # Nominal industry descriptor
 names(r8_data)[2]  <- "naics"        # Categorical NAICS code (sector-level aggregation)
 names(r8_data)[3]  <- "case_type"    # Injury classification indicator
 names(r8_data)[4]  <- "total_rate"   # Incidence rate (total injuries per 10,000 FTE)
 names(r8_data)[10] <- "fall_rate"    # Incidence rate (falls per 10,000 FTE)
-# Restrict dataset to sector-level aggregates using top-level NAICS codes.
-# Filtering on case_type == "DAFW" isolates higher-severity nonfatal injuries,
-# operationalized as incidents resulting in ≥1 full day away from work.
-# This produces one-row subsets representing sector-level summary statistics.
+
+ Restrict dataset to sector-level aggregates using top-level NAICS codes.
+ Filtering on case_type == "DAFW" isolates higher-severity nonfatal injuries,
+ operationalized as incidents resulting in ≥1 full day away from work.
+ This produces one-row subsets representing sector-level summary statistics.
+
 mfg <- r8_data %>% filter(naics == "31-33", case_type == "DAFW")
 fin <- r8_data %>% filter(naics == "52",    case_type == "DAFW")
 pro <- r8_data %>% filter(naics == "54",    case_type == "DAFW")
 
-# Extract scalar values from single-row tibbles via positional indexing.
-# Type coercion (character → numeric) is required due to initial raw import.
-# Non-numeric placeholders (e.g., suppression symbols) propagate as NA under coercion.
+ Extract scalar values from single-row tibbles via positional indexing.
+ Type coercion (character → numeric) is required due to initial raw import.
+ Non-numeric placeholders (e.g., suppression symbols) propagate as NA under coercion.
 mfg_total <- as.numeric(mfg$total_rate[1])
 mfg_falls <- as.numeric(mfg$fall_rate[1])
 
@@ -179,19 +170,19 @@ fin_falls <- as.numeric(fin$fall_rate[1])
 pro_total <- as.numeric(pro$total_rate[1])
 pro_falls <- as.numeric(pro$fall_rate[1])
 
-# Construct derived proportion: fall-related incidence relative to total incidence.
-# Computation is vectorized at scalar level and scaled to percentage form.
+ Construct derived proportion: fall-related incidence relative to total incidence.
+ Computation is vectorized at scalar level and scaled to percentage form.
 mfg_fall_share <- round((mfg_falls / mfg_total) * 100, 1)
 fin_fall_share <- round((fin_falls / fin_total) * 100, 1)
 pro_fall_share <- round((pro_falls / pro_total) * 100, 1)
-# Convert tibble to base data.frame to ensure compatibility with explicit
-# integer-based row/column indexing (i,j notation)
+ Convert tibble to base data.frame to ensure compatibility with explicit
+ integer-based row/column indexing (i,j notation)
 fatal_df <- as.data.frame(fatal)
 
-# Extract sector-level fatality counts via fixed row indices.
-# Row mappings correspond to sector aggregates identified through deterministic
-# inspection of the source file structure (non-relational layout).
-# Column 3 = total fatalities; Column 7 = fall-related fatalities.
+ Extract sector-level fatality counts via fixed row indices.
+ Row mappings correspond to sector aggregates identified through deterministic
+ inspection of the source file structure (non-relational layout).
+ Column 3 = total fatalities; Column 7 = fall-related fatalities.
 mfg_fatal_total <- as.numeric(fatal_df[143, 3])
 mfg_fatal_falls <- as.numeric(fatal_df[143, 7])
 
@@ -201,66 +192,62 @@ fin_fatal_falls <- as.numeric(fatal_df[453, 7])
 pro_fatal_total <- as.numeric(fatal_df[488, 3])
 pro_fatal_falls <- as.numeric(fatal_df[488, 7])
 
-# Compute conditional proportion of fatalities attributable to falls within sector.
-# Results are normalized and expressed as percentages with one-decimal precision.
+ Compute conditional proportion of fatalities attributable to falls within sector.
+ Results are normalized and expressed as percentages with one-decimal precision.
 mfg_fall_pct <- round((mfg_fatal_falls / mfg_fatal_total) * 100, 1)
 fin_fall_pct <- round((fin_fatal_falls / fin_fatal_total) * 100, 1)
 pro_fall_pct <- round((pro_fatal_falls / pro_fatal_total) * 100, 1)
-```
 
 
 
 
 
-Changed to:
-```{r methods-setup, include=FALSE}
+
+##Changed to:
+
 library(readxl)
 library(tidyverse)
 library(knitr)
-```
 
-```{r load, eval=FALSE}
 library(readxl)
 library(tidyverse)
 
-# col_names = FALSE prevents R from using row 1 as headers.
-# The BLS files have a title row and a label row before data begins,
-# so letting R guess headers would break everything.
+ col_names = FALSE prevents R from using row 1 as headers.
+ The BLS files have a title row and a label row before data begins,
+ so letting R guess headers would break everything.
 r8    <- read_excel(
   "case-and-demographic-characteristics-table-r8-2023-2024.xlsx",
   col_names = FALSE)
 
 fatal <- read_excel("fatal.xlsx", col_names = FALSE)
-```
 
-```{r clean-r8, eval=FALSE}
-# Drop the two header rows so data starts at row 1
+ Drop the two header rows so data starts at row 1
 r8_data <- r8[-c(1, 2), ]
 
-# Rename only the columns we use.
-# Column positions identified by inspecting the raw file:
-#   col 1  = industry name
-#   col 2  = NAICS code
-#   col 3  = case type (DAFW, DART, or DJTR)
-#   col 4  = total injury rate per 10,000 FTE workers
-#   col 10 = falls, slips, trips rate per 10,000 FTE workers
+ Rename only the columns we use.
+ Column positions identified by inspecting the raw file:
+   col 1  = industry name
+   col 2  = NAICS code
+  col 3  = case type (DAFW, DART, or DJTR)
+   col 4  = total injury rate per 10,000 FTE workers
+   col 10 = falls, slips, trips rate per 10,000 FTE workers
 names(r8_data)[1]  <- "industry"
 names(r8_data)[2]  <- "naics"
 names(r8_data)[3]  <- "case_type"
 names(r8_data)[4]  <- "total_rate"
 names(r8_data)[10] <- "fall_rate"
-```
 
-```{r filter-r8, eval=FALSE}
-# Filter to top-level NAICS sectors, DAFW case type only.
-# Using the broadest NAICS code (e.g. "31-33" not "311") ensures we get
-# the full sector average rather than a sub-industry figure.
+
+
+ Filter to top-level NAICS sectors, DAFW case type only.
+Using the broadest NAICS code (e.g. "31-33" not "311") ensures we get
+ the full sector average rather than a sub-industry figure.
 mfg <- r8_data %>% filter(naics == "31-33", case_type == "DAFW")
 fin <- r8_data %>% filter(naics == "52",    case_type == "DAFW")
 pro <- r8_data %>% filter(naics == "54",    case_type == "DAFW")
 
-# as.numeric() converts from character type (a side effect of col_names = FALSE).
-# Suppressed cells shown as "-" in the BLS table will become NA here.
+ as.numeric() converts from character type (a side effect of col_names = FALSE).
+ Suppressed cells shown as "-" in the BLS table will become NA here.
 mfg_total <- as.numeric(mfg$total_rate[1])
 mfg_falls <- as.numeric(mfg$fall_rate[1])
 fin_total  <- as.numeric(fin$total_rate[1])
@@ -268,20 +255,20 @@ fin_falls  <- as.numeric(fin$fall_rate[1])
 pro_total  <- as.numeric(pro$total_rate[1])
 pro_falls  <- as.numeric(pro$fall_rate[1])
 
-# Derived measure: falls as a percentage of all nonfatal injuries per sector
+ Derived measure: falls as a percentage of all nonfatal injuries per sector
 mfg_fall_share <- round(mfg_falls / mfg_total * 100, 1)
 fin_fall_share  <- round(fin_falls  / fin_total  * 100, 1)
 pro_fall_share  <- round(pro_falls  / pro_total  * 100, 1)
-```
 
-```{r clean-fatal, eval=FALSE}
-# Convert to data frame for row-based indexing
+
+
+ Convert to data frame for row-based indexing
 fatal_df <- as.data.frame(fatal)
 
-# Row positions verified from raw file inspection:
-# Row 143 = Manufacturing (NAICS 31-33)
-# Row 453 = Finance and insurance (NAICS 52)
-# Row 488 = Professional, scientific, and technical services (NAICS 54)
+ Row positions verified from raw file inspection:
+ Row 143 = Manufacturing (NAICS 31-33)
+ Row 453 = Finance and insurance (NAICS 52)
+ Row 488 = Professional, scientific, and technical services (NAICS 54)
 mfg_fatal_total <- as.numeric(fatal_df[143, 3])
 mfg_fatal_falls <- as.numeric(fatal_df[143, 7])
 fin_fatal_total <- as.numeric(fatal_df[453, 3])
@@ -289,8 +276,7 @@ fin_fatal_falls <- as.numeric(fatal_df[453, 7])
 pro_fatal_total <- as.numeric(fatal_df[488, 3])
 pro_fatal_falls <- as.numeric(fatal_df[488, 7])
 
-#Fatal injury counts were taken directly from CFOI Table A-1. Fall share of deaths are calculated by dividing fatal falls by total sector deaths.
+Fatal injury counts were taken directly from CFOI Table A-1. Fall share of deaths are calculated by dividing fatal falls by total sector deaths.
 mfg_fall_pct <- round(mfg_fatal_falls / mfg_fatal_total * 100, 1)
 fin_fall_pct  <- round(fin_fatal_falls  / fin_fatal_total  * 100, 1)
 pro_fall_pct  <- round(pro_fatal_falls  / pro_fatal_total  * 100, 1)
-```

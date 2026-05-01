@@ -2,6 +2,10 @@ project:
   type: book  
   output-dir: docs
 
+profiles:
+  windows:
+    post-render: compile-slides.bat
+
 book:
   title: "Workplace Injury Risk: Office Workers vs. Manufacturing Workers"
   author: "Brynn"
@@ -13,8 +17,9 @@ book:
     - 03-methods.qmd
     - 04-results.qmd
     - 05-conclusion.qmd
-  references: references1.bib
- 
+    - references.qmd
+    
+
 bibliography: references1.bib
  
 crossref:
