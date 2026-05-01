@@ -80,8 +80,7 @@ basis of the secondary/severity analysis.
 The SOII is a sample survey: it estimates injury rates from a sample of
 employers. The CFOI is a census: it counts every single fatal workplace
 injury and verifies it independently. This makes the CFOI more definitive for
-fatal outcomes, but it also means the two sources are not directly comparable
-in their methodology.
+fatal outcomes, but it also means the two sources are not directly comparable.
 :::
 
 
